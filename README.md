@@ -1,5 +1,5 @@
 <h1 align="center">Aplication Hello.SehatYuks</h1>
-<h4 align="center">Kami membangun sebuah aplikasi yang memiliki fungsionalitas dengan menerapkan beberapa pendekatan melalui uji pengembang dengan tim kami dengan layanan kesehatan fitur khusus yang kami kembangkan tidak mendukung scurity keamanan data dengan ini kami tidak memiliki hak otoritas</h4>
+<p>Kami membangun sebuah aplikasi yang memiliki fungsionalitas dengan menerapkan beberapa pendekatan melalui uji pengembang dengan tim kami dengan layanan kesehatan fitur khusus yang kami kembangkan tidak mendukung scurity keamanan data dengan ini kami tidak memiliki hak otoritas</p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

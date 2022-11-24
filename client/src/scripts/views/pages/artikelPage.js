@@ -1,4 +1,4 @@
-import '../templates/templateArtikel';
+//import '../templates/templateArtikel';
 
 const ArtikelPage = {
     async render() {

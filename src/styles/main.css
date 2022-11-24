@@ -46,10 +46,6 @@ body{
 }
 
 /*Logo iris di navigasi*/
-.app-bar .app-bar__slogan img{
-    user-select: none;
-}
-
 /* dalam hamburger*/
 .app-bar .app-bar__navigasi {
     position: absolute;

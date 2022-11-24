@@ -13,5 +13,12 @@ const app = new App({
   content: document.querySelector('#mainContent'),
 });
 
+window.addEventListener('hashchange', () => {
+  app.pageRender();
+});
+
+window.addEventListener('load', () => {
+  app.pageRender();
+});
 // Import all of Bootstrap's JS
 // import * as bootstrap from 'bootstrap';

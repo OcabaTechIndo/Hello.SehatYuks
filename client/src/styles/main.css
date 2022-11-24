@@ -10,75 +10,155 @@ body{
     display: flex;
     flex-direction: column;
 }
+main {
+    padding-bottom: 32px;
+    margin-top: 90px;
+}
 
-/*app bar*/
+/*navigasi*/
 
-.app-bar{
-    padding: 8px 16px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 99;
+.navigasi-menu{
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 20px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.app-bar .app-bar__menu{
-    display: flex;
-    align-items: center;
-}
-
-.app-bar .app-bar__menu button{
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    padding: 8px;
-    cursor: pointer;
+.navigasi-menu img{
     min-height: 44px;
-    min-width: 44px;
-}
-
-.app-bar .app-bar__slogan {
-    display: flex;
-    align-items: center;
-}
-
-/*Logo iris di navigasi*/
-/* dalam hamburger*/
-.app-bar .app-bar__navigasi {
-    position: absolute;
-    top: 50px;
-    left: -180px;
-    width: 150px;
-    transition: all 0.4s;
-    padding: 8px;
-    background-color: white;
-    overflow: hidden;
-}
-
-.app-bar .app-bar__navigasi.open {
-    left: 0;
-}
-
-/* Pilihan menu di navigasi */
-.app-bar .app-bar__navigasi ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 8px;
-    margin-bottom: 5px;
+    min-height: 44px;
     width: 100%;
 }
 
-main {
-    padding: 32px;
-    flex: 1;
+.nav-link{
+    min-height: 44px;
+    min-height: 44px;
 }
 
-/* untuk tampilan lainnya */
+.hamburgerButton{
+    min-height: 44px;
+    min-height: 44px;
+}
 
+.navbar-nav{
+    gap: 10px;
+    margin-top: 11px;
+}
+
+
+/* jumbotron*/
+.jumbotron{
+    margin-top: 10px;
+    background-image: url(../public/logo/hero.jpg);
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+}
+
+.jumbotron .display-4{
+    color: white;
+    font-weight: bold;
+    padding-top: 170px;
+}
+
+.jumbotron p{
+    color: white;
+}
+
+.jumbotron hr{
+    border-color: #92E3A9;
+    border-width: 3px;
+    margin: 650px;
+}
+
+.jumbotron .btn{
+    background-color: #92E3A9;
+    border: none;
+}
+
+
+/*slider*/
+
+.carousel-item{
+    height: 670px;
+}
+
+.carousel-item .display-4{
+    margin-top: -400px;
+}
+
+.carousel-item hr{
+    border-color: #92E3A9;
+    width: 200px;
+    border-width: 3px;
+    margin: 400px;
+}
+
+.carousel-item .btn{
+    background-color: #92E3A9;
+    border: none;
+    color: black;
+}
+
+.carousel-caption{
+    color: black;
+}
+
+.slider-area{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.artikel-rekomendasi{
+    padding-bottom: 20px;
+}
+
+.carousel-indicators button{
+    border-radius: 5px;
+}
+
+.carousel-indicators button:focus{
+    background-color: black;
+}
+.carousel-indicators .active{
+    background-color: #92E3A9;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*tombol prev and next slider*/
+.carousel-control-prev .carousel-control-prev-icon{
+    background-color: black;
+    min-height: 44px;
+    min-width: 44px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.carousel-control-next .carousel-control-next-icon{
+   background-color: black;
+    min-height: 44px;
+    min-width: 44px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.carousel-item image{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
 footer {
     padding: 16px;
     background-color: #1392E9;

@@ -18,7 +18,7 @@ main {
 /*navigasi*/
 
 .navigasi-menu{
-    padding-left: 2px;
+    padding-left: 23px;
     padding-right: 23px;
     padding-bottom: 20px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -232,7 +232,7 @@ main {
     box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
   }
   
-  .namaObat {
+  .nama-info {
     padding: 0 10px 10px 10px;
   }
 

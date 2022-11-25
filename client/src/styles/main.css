@@ -145,8 +145,72 @@ main {
     width: 100%;
 }
 
+/* Obat */
+.katalog {
+    border-radius: 5px;
+    width: 450px;
+    margin: 30px auto auto;
+    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  #listObat {
+    display: grid;
+    grid-row-gap: 20px;
+  }
 
+  .detailObats {
+    position: relative;
+    margin: 5px;
+  }
+  
+  .kota {
+    position: absolute;
+    background-color: #FDFF00;
+    color: black;
+    margin: 5px 5px 5px 0;
+    padding: 3px 8px 3px 15px;
+    border-radius: 3px;
+    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detailObats img {
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rating {
+    margin: 10px;
+  
+  }
+  
+  .namaObat {
+    padding: 0 10px 10px 10px;
+  }
+  
+  .keterangan {
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+  }
 
+  .beli-obat{
+    background-color: #92E3A9;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .header-obat{
+    margin-top: 30px;
+    font-size: 24px;
+  }
 
 
 

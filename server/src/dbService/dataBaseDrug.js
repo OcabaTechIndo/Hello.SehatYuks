@@ -29,7 +29,7 @@ class DbDrug {
         try {
             const { background, brand_name, name_general, numberdrugaccess, summary } = DrugData;
             const insertId = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO drug_table (background, brand_name, name_general, numberdrugaccess, summary) VALUES ?;";
+                const query = "INSERT INTO drug_table (background, brand_name, name_general, numberdrugaccess, summary) VALUES (?,?,?,?,?);";
 
                 connection.query(query, [background, brand_name, name_general, numberdrugaccess, summary] , (err, result) => {
                     if (err) reject(new Error(err.message));

@@ -154,7 +154,7 @@ main {
     position: relative;
   }
   
-  #listObat {
+  .listObat {
     display: grid;
     grid-row-gap: 20px;
   }
@@ -164,15 +164,6 @@ main {
     margin: 5px;
   }
   
-  .kota {
-    position: absolute;
-    background-color: #FDFF00;
-    color: black;
-    margin: 5px 5px 5px 0;
-    padding: 3px 8px 3px 15px;
-    border-radius: 3px;
-    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
-  }
   
   .detailObats img {
     height: 450px;
@@ -213,6 +204,37 @@ main {
   }
 
 
+  /*info kesehatan*/
+
+  .katalog-info {
+    border-radius: 5px;
+    width: 450px;
+    margin: 30px auto auto;
+    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .list-info {
+    display: grid;
+    grid-row-gap: 20px;
+  }
+
+  .detail-info {
+    position: relative;
+    margin: 5px;
+  }
+  
+  
+  .detail-info img {
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 7px 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .namaObat {
+    padding: 0 10px 10px 10px;
+  }
 
 
 

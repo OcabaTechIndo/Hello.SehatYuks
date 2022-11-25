@@ -1,3 +1,0 @@
-const GLOBAL_VAR{
-
-}

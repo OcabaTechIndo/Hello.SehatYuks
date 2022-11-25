@@ -1,3 +1,5 @@
+import API_ENDPOINT from "../../globals/api_endpoint";
+
 class Artikel extends HTMLElement {
     set artikelSehat(sehat) {
         this._artikelSehat = sehat;

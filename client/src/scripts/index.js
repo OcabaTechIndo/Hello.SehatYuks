@@ -6,6 +6,7 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import 'bootstrap';
 import App from './views/app';
+import API_ENDPOINT from './globals/api_endpoint';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),

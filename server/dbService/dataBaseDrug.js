@@ -66,6 +66,11 @@ class DbDrug {
             console.log(err.message);
         }
     }
+
+
+    // async getDrugById () {
+        
+    // }
 }
 
 module.exports = DbDrug;

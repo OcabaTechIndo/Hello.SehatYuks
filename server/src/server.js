@@ -26,7 +26,10 @@ app.post('/obat/add', (request, response) => {
     const result = dataBase.insertDrugData(DrugData);
 
     result
-    .then(data => response.json({ data: data }))
+    .then(data => response.json({ 
+        status: 'success',
+        data: data 
+    }))
     .catch(err => console.log(err.message))
 })
 

@@ -8,11 +8,11 @@ const DbDrug = require('../dbService/dataBaseDrug')
     module.exports = function(app){
         app.post('/obat/add', (request, response) => {
             const {
-                background, brand_name, name_general, numberdrugaccess, summary
+                background, brand_name, name_general, numberdrugaccess, summary, indicator
             } = request.body; 
         
             const DrugData = {
-                background, brand_name, name_general, numberdrugaccess, summary
+                background, brand_name, name_general, numberdrugaccess, summary, indicator
             }
             const dataBase = DbDrug.getInstaceDrug();
             const result = dataBase.insertDrugData(DrugData);
@@ -27,7 +27,7 @@ const DbDrug = require('../dbService/dataBaseDrug')
             const result = dataBase.getAllDrug();
         
             result
-            .then(data => response.json({data: data}))
+            .then(data => response.json({obat: data}))
             .catch( err => console.log(err.message))
         })
         

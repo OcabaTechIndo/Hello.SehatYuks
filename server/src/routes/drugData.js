@@ -3,24 +3,19 @@ const DbDrug = require('../dbService/dataBaseDrug');
 let app = express();
 module.exports = function(app){
 app.post('/obat/add', (request, response) => {
-        const { background, brand_name, name_general, numberdrugaccess, summary } = request.body;
+        const {
+            background, brand_name, name_general, numberdrugaccess, summary
+        } = request.body; 
+
         const DrugData = {
-            background,
-            brand_name,
-            name_general,
-            numberdrugaccess,
-            summary
+            background, brand_name, name_general, numberdrugaccess, summary
         }
-        console.log(DrugData);
         const dataBase = DbDrug.getInstaceDrug();
         const result = dataBase.insertDrugData(DrugData);
 
         result
-        .then(data => response.json({ 
-            status: 'success',
-            data: data 
-        }))
-        .catch(err => console.log(err.message))
+        .then(data => response.json({ data: data }))
+        .catch(err => console.log(err));
     })
 
 app.get('/obat/list', (request, response) => {
@@ -31,4 +26,18 @@ app.get('/obat/list', (request, response) => {
         .then(data => response.json({data: data}))
         .catch( err => console.log(err.message))
     })
+
+app.get('/obat/detail/:id', (request, response) => {
+        const { id } = request.params;
+        const dataBase = DbDrug.getInstaceDrug();
+        const result = dataBase.getDrugById(id)
+
+        result
+        .then(data => response.json({
+            status: 'success',
+            data: data}
+            ))
+        .catch( err => console.log(err.message))
+})
+
 }

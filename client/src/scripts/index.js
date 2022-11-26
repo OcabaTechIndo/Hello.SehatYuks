@@ -6,11 +6,8 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import 'bootstrap';
 import App from './views/app';
-import swRegist from './utils/serviceWorkerRegist';
 
 const app = new App({
-  button: document.querySelector('#hamburgerButton'),
-  drawer: document.querySelector('#navDrawer'),
   content: document.querySelector('#mainContent'),
   // obat: document.querySelector('#hasil'),
 });
@@ -20,8 +17,5 @@ window.addEventListener('hashchange', () => {
 });
 
 window.addEventListener('load', () => {
-  app.pageRender();
-  swRegist();
+  app.renderPage();
 });
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap';

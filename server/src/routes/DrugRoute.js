@@ -4,7 +4,7 @@
 // app.use(cors());
 // app.use(express.json());
 // app.use(express.urlencoded({ extended : false }));
-const DbDrug = require('../dbService/dataBaseDrug')
+const DbDrug = require('../controlers/drugControler')
     module.exports = function(app){
         app.post('/obat/add', (request, response) => {
             const {

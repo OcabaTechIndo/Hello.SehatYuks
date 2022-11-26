@@ -1,19 +1,24 @@
-import UrlParser from '../routes/URL_parser';
 import routes from '../routes/routes';
+import UrlParser from '../routes/URL_parser';
 
 class App {
   constructor({ button, drawer, content, obat }) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
-    this._obat = obat;
   }
 
   async renderPage() {
-    const URLRoute = UrlParser.parseActiveUrlWithCombiner();
-    const page = routes[URLRoute];
-    this._obat.innerHTML = await page.render();
+    const url = UrlParser.parseActiveUrlWithCombiner();
+    const page = routes[url];
+    // eslint-disable-next-line no-underscore-dangle
+    this._content.innerHTML = await page.render();
     await page.afterRender();
+    const skipLinkElem = document.querySelector('.skip_link');
+    skipLinkElem.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector('#mainContent').focus();
+    });
   }
 }
 

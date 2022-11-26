@@ -1,14 +1,16 @@
-// const ArtikelPage = {
-//     async render() {
-//         return `
-//             // <artikel-container></artikel-container>
-//             Hello Artikel
-//         `;
-//     },
+// import UrlParser from "../../routes/URL_parser";
 
-//     async afterRender() {
-//         // const elementContentArtikel = document.querySelector('artikel-container');
-//     },
-// };
+const ArtikelPage = {
+    async render() {
+        return `
+        <h1>Hello World Artikel Page</h1>
+      `;
+    },
 
-// export default ArtikelPage;
+    // eslint-disable-next-line no-empty-function
+    // async afterRender() {
+    //     const url = UrlParser.parseActiveUrlWithoutCombiner();
+    // },
+};
+
+export default ArtikelPage;

@@ -19,13 +19,14 @@ class Obat extends HTMLElement {
         obatListContainer.innerHTML = '';
         this._ObatTemplate.forEach((obat) => {
             obatListContainer.innerHTML += `
-                <div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Baca</a>
-                    </div>
+                <div tabindex="0" class="katalog">
+                    <div class="detailObats">
+                        <h3 class="namaObat">${obat.name_general}</h3>
+                        <img class="fotoObats" src="../picDummy/obat.webp" alt="Gambar obat .." />
+                        <p class="rating">${obat.brand_name}</p>
+                        <p class="keterangan">${obat.summary.slice(0, 200)}</p>
+                        </div>
+                    <button class="beli-obat">Lihat Info</button>
                 </div>
             `;
         });

@@ -1,15 +1,14 @@
-//import '../templates/templateArtikel';
+// const ArtikelPage = {
+//     async render() {
+//         return `
+//             // <artikel-container></artikel-container>
+//             Hello Artikel
+//         `;
+//     },
 
-const ArtikelPage = {
-    async render() {
-        return `
-            <artikel-container></artikel-container>
-        `;
-    },
+//     async afterRender() {
+//         // const elementContentArtikel = document.querySelector('artikel-container');
+//     },
+// };
 
-    /* kontent render akan dipakai setelah API siap digunakan
-    async afterRender() {
-        const elementContentArtikel = document.querySelector('artikel-container');
-    }
-    */
-}
+// export default ArtikelPage;

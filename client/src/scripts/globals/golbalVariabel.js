@@ -1,5 +1,5 @@
 const GLOBAL_VAR = {
-    URL: 'http://8080',
+    URL: 'http://localhost/9090',
 };
 
 export default GLOBAL_VAR;

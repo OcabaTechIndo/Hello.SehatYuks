@@ -1,28 +1,24 @@
-import drawerInitiator from '../utils/drawer-initiator';
-import UrlParser from '../routes/URL_parser';
 import routes from '../routes/routes';
+import UrlParser from '../routes/URL_parser';
 
 class App {
   constructor({ button, drawer, content }) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
-
-    this._initialAppShell();
   }
 
-  _initialAppShell() {
-    drawerInitiator.init({
-      button: this._button,
-      drawer: this._drawer,
-      content: this._content,
-    });
-  }
-
-  async pageRender() {
-    const URL_Route = UrlParser.parseActiveUrlWithCombiner();
-    const page = routes[URL];
+  async renderPage() {
+    const url = UrlParser.parseActiveUrlWithCombiner();
+    const page = routes[url];
+    // eslint-disable-next-line no-underscore-dangle
     this._content.innerHTML = await page.render();
+    await page.afterRender();
+    const skipLinkElem = document.querySelector('.skip_link');
+    skipLinkElem.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector('#mainContent').focus();
+    });
   }
 }
 

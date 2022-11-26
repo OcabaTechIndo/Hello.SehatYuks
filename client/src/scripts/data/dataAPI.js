@@ -1,10 +1,11 @@
-import GLOBAL_VAR from "../globals/golbalVariabel";
-import API_ENDPOINT from "../globals/api_endpoint";
+import API_ENDPOINT from '../globals/api_endpoint';
 
 class DataAPI {
     static async GET_obat() {
-        const response = await fetch(`${GLOBAL_VAR.URL}/list`);
+        const response = await fetch(`${API_ENDPOINT}`);
         const responseJSON = await response.json();
-        return responseJSON.
+        return responseJSON.obat;
     }
 }
+
+export default DataAPI;

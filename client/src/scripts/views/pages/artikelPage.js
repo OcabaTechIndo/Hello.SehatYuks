@@ -1,15 +1,16 @@
-//import '../templates/templateArtikel';
+// import UrlParser from "../../routes/URL_parser";
 
 const ArtikelPage = {
     async render() {
-        return `
-            <artikel-container></artikel-container>
-        `;
+      return `
+        <h1>Hello World Artikel Page</h1>
+      `;
     },
 
-    /* kontent render akan dipakai setelah API siap digunakan
-    async afterRender() {
-        const elementContentArtikel = document.querySelector('artikel-container');
-    }
-    */
-}
+    // eslint-disable-next-line no-empty-function
+    // async afterRender() {
+    //     const url = UrlParser.parseActiveUrlWithoutCombiner();
+    // },
+  };
+
+  export default ArtikelPage;

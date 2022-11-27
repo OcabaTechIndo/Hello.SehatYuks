@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 /* eslint-disable import/no-duplicates */
 // Import our custom CSS
 import 'regenerator-runtime';

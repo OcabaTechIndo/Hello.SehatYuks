@@ -1,6 +1,6 @@
 /* eslint-disable space-before-blocks */
 class Obat extends HTMLElement {
-    set obatData(value){
+    set obatData(value) {
         this._obatData = value;
         this.render();
     }
@@ -12,7 +12,7 @@ class Obat extends HTMLElement {
                 <img src="./logo/obat_heart.png" alt="">
                 <p>Masih ragu cara memilih obat yang tepat? jangan khawatir, IRIS akan membantu kamu</p>
                 <div id="searchObat" class"obatSearchContainer"></div>
-                <div id="drop_list" class="list_content"></div>    
+                <div id="drop_list" class="list_content d-flex"></div>    
             </div>
         `;
         const elementListObat = this.querySelector('#drop_list');
@@ -38,12 +38,3 @@ class Obat extends HTMLElement {
 }
 
 customElements.define('obat-list', Obat);
-
-// <div class="card" style="width: 18rem;">
-// <img src="" class="card-img-top" alt="...">
-//     <div class="card-body">
-//         <h5 class="card-title">${obat.background}</h5>
-//         <p class="card-text"></p>
-//         <a href="#" class="btn btn-primary">Baca</a>
-//     </div>
-// </div>

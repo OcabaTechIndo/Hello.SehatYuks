@@ -1,67 +1,78 @@
 @media screen and (min-width: 500px) {
-    .katalog {
-      width: 350px;
-    }
-    .katalog-info {
-      width: 350px;
-    }
-  
+  .katalog {
+    width: 350px;
   }
-  
-  @media screen and (min-width: 700px) {
-    #hasil {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    #hasil-info {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .katalog {
-      width: 350px;
-    
+
+  .katalog-info {
+    width: 350px;
   }
-    .katalog-info {
-      width: 350px;
-    }
+
 }
-  
-  @media screen and (min-width: 900px) {
-    #hasil {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #hasil-info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .katalog {
-      width: 300px;
-    }
-  
-    .katalog-info {
-      width: 300px;
-    }
+
+@media screen and (min-width: 700px) {
+  #hasil {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media screen and (min-width: 1100px) {
-    #hasil {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .katalog {
-      width: 340px;
-    }
-    #hasil-info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .katalog-info {
-      width: 340px;
-    }
+
+  #hasil-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
+  .katalog {
+    width: 350px;
+
+  }
+
+  .katalog-info {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #hasil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #hasil-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .katalog {
+    width: 300px;
+  }
+
+  .katalog-info {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #hasil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .katalog {
+    width: 340px;
+  }
+
+  #hasil-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .katalog-info {
+    width: 340px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}

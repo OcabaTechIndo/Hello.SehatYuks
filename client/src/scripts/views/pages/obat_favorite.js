@@ -5,9 +5,9 @@ const ObatFavorite = {
             `;
       },
 
-      // async afterRender() {
+      async afterRender() {
 
-      // },
+      },
 };
 
 export default ObatFavorite;

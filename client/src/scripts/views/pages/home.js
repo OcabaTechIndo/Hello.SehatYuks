@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 const HomePage = {
     async render() {
       return `
@@ -5,9 +6,9 @@ const HomePage = {
           `;
     },
 
-    // async afterRender() {
+    async afterRender() {
 
-    // },
+    },
 
   };
 

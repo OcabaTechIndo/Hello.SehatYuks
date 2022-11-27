@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 const Covid19Page = {
     async render() {
         return `
@@ -5,9 +6,8 @@ const Covid19Page = {
             `;
       },
 
-      // async afterRender() {
-
-      // },
+      async afterRender() {
+      },
 };
 
 export default Covid19Page;

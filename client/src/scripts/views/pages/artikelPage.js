@@ -8,9 +8,8 @@ const ArtikelPage = {
     },
 
     // eslint-disable-next-line no-empty-function
-    // async afterRender() {
-    //     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    // },
+    async afterRender() {
+    },
   };
 
   export default ArtikelPage;

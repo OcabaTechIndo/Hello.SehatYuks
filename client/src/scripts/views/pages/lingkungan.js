@@ -5,9 +5,9 @@ const LingkunganPage = {
             `;
       },
 
-      // async afterRender() {
+      async afterRender() {
 
-      // },
+      },
 };
 
 export default LingkunganPage;

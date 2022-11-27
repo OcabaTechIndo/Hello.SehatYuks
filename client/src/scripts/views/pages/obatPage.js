@@ -1,5 +1,5 @@
-import '../templates/obat_template';
 import DataAPI from '../../data/dataAPI';
+import '../templates/obat_template';
 
 const ObatPage = {
     async render() {
@@ -9,10 +9,10 @@ const ObatPage = {
     },
 
     async afterRender() {
-      const dataObat = DataAPI.GET_obat();
+      const dataObat = await DataAPI.GET_obat();
       console.log(dataObat);
       const containerObat = document.querySelector('obat-list');
-      containerObat.ObatTemplate = dataObat;
+      containerObat.obatData = dataObat;
     },
 
   };

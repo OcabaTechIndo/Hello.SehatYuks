@@ -2,7 +2,7 @@
 
 const ArtikelPage = {
     async render() {
-      return `
+        return `
         <h1>Hello World Artikel Page</h1>
       `;
     },
@@ -11,6 +11,6 @@ const ArtikelPage = {
     // async afterRender() {
     //     const url = UrlParser.parseActiveUrlWithoutCombiner();
     // },
-  };
+};
 
-  export default ArtikelPage;
+export default ArtikelPage;

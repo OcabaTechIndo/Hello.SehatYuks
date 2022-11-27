@@ -9,6 +9,7 @@ import App from './views/app';
 
 const app = new App({
   content: document.querySelector('#mainContent'),
+  // obat: document.querySelector('#hasil'),
 });
 
 window.addEventListener('hashchange', () => {

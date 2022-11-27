@@ -1,14 +1,14 @@
 const HomePage = {
-    async render() {
-      return `
+  async render() {
+    return `
           <h1>Hello Ini adalah halaman HOME</h1>
           `;
-    },
+  },
 
-    // async afterRender() {
+  // async afterRender() {
 
-    // },
+  // },
 
-  };
+};
 
 export default HomePage;

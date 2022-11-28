@@ -18,13 +18,13 @@ class Home extends HTMLElement {
             <hr class="my-4">
             <p clas>Gaskeun jaga kesehatan</p>
             <a href="#" class="btn btn-primary btn-lg">Join Now</a>
-        <div id="slider_container" class="container"></div>
+            <div class="container">
+        <div id="slider_container"></div>
+        </div>
     `;
 
         const sliderContainer = document.querySelector('#slider_container');
         sliderContainer.innerHTML = `
-        < !--Slider-->
-
         <div id="carouselExampleIndicators" class="carousel slide slider-area" data-bs-ride="true">
             <h1 class="artikel-rekomendasi">Rekomendasi Artikel</h1>
             <div class="carousel-indicators">

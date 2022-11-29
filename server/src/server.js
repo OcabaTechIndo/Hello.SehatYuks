@@ -7,7 +7,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
-require ('./routes/DrugRoute')(app)
+require ('./endpoint/drug.router')(app)
 require('./endpoint/user.router')(app)
 
 app.listen(process.env.PORT, () => {

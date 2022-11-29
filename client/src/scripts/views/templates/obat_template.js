@@ -7,13 +7,18 @@ class Obat extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <div id="list_obat" class="list_container">
-                <h3>Home > Info obat</h3>
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Info Obat</li>
+        </ol>
+        </nav>
+            <div id="list_obat" class="list_container container">
                 <img src="./logo/obat_heart.png" alt="">
                 <p>Masih ragu cara memilih obat yang tepat? jangan khawatir, IRIS akan membantu kamu</p>
                 <div id="searchObat" class"obatSearchContainer"></div>
-                <div id="drop_list" class="list_content d-flex">
-                    <div id="obat_card_list"></div>
+                <div id="drop_list" class="list_content d-flex container text-center">
+                <div class="row" id="obat_card_list"></div>
                 </div>
             </div>
         `;
@@ -21,7 +26,7 @@ class Obat extends HTMLElement {
         elementListObat.innerHTML = '';
         this._obatData.forEach((obat) => {
             elementListObat.innerHTML += `
-            <div class="card" style="width: 18rem;">
+            <div class="card col-" id="obatCar" style="width: 18rem;">
             <img src="" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${obat.background.slice(0, 20)}</h5>
@@ -31,8 +36,8 @@ class Obat extends HTMLElement {
                     <p class="card-text">${obat.name_general}</p>
                     <p class="card-text">${obat.numberdrugaccess}</p>
                     <p class="card-text">${obat.summary.slice(0, 20)}</p>
-                    <a href="#" class="btn btn-primary">Baca</a>
                 </div>
+                <a href="#" id="bacaObat" class="btn btn-primary">Baca</a>
             </div>
             `;
         });

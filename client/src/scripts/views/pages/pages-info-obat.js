@@ -1,5 +1,5 @@
 import DataAPI from '../../data/dataAPI';
-import '../templates/obat_template';
+import '../templates/template-info-obat.js';
 
 const ObatPage = {
     async render() {

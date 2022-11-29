@@ -5,6 +5,7 @@ import templateDetailObat from '../templates/template-detail-obat';
 const detailObat = {
     async render() {
         return `
+        <h1> Detail Obat page</h1>
         <div tabindex="0" class="container text-center">
         <div class="row" id="detailObat"></div>
         </div>
@@ -22,5 +23,3 @@ const detailObat = {
 };
 
 export default detailObat;
-
-//gua cari makan dulu

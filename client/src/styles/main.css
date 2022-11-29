@@ -277,8 +277,30 @@ main {
   min-height: 44px;
   min-width: 44px;
   margin-bottom: 10px;
+  background-color: #92E3A9;
+  color: black;
+  border: none;
 }
 
+#covidCar{
+  margin: 10px;
+}
+
+#lingkunganCar{
+  margin: 10px;
+}
+
+#udaraCar{
+  margin: 10px;
+}
+
+#artikelCar{
+  margin: 10px;
+}
+
+.petunjukHalaman{
+  margin-left: 30px;
+}
 
 
 

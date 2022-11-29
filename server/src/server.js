@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 require ('./routes/DrugRoute')(app)
-require('./controlers/user.router')(app)
+require('./endpoint/user.router')(app)
 
 app.listen(process.env.PORT, () => {
     console.log(`server running`)

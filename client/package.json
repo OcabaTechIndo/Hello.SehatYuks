@@ -53,6 +53,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/material": "^5.10.14",
     "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
     "flickity": "^3.0.0",
     "regenerator-runtime": "^0.13.10"
   }

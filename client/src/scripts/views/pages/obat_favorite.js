@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 const ObatFavorite = {
     async render() {
         return `

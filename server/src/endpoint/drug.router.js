@@ -2,7 +2,7 @@ const { checkToken } = require('../auth/auth')
 const { createDrug, getAllDrug, gedDrugByid, } = require('../routes/DrugRoute')    
 
 module.exports = function(app){
-    app.post('/obat/add', checkToken,createDrug);
-    app.get('/obat/list', checkToken, getAllDrug);
-    app.get('/obat/detail/:id', checkToken, gedDrugByid);
+    app.post('/obat/add',createDrug);
+    app.get('/obat/list', getAllDrug);
+    app.get('/obat/detail/:id', gedDrugByid);
 }

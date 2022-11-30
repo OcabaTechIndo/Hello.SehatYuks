@@ -269,11 +269,11 @@ main {
   width: 100%;
 }
 
-#list_obat{
+#list_obat {
   margin: 0 auto;
 }
 
-#bacaObat{
+#bacaObat {
   min-height: 44px;
   min-width: 44px;
   margin-bottom: 10px;
@@ -282,23 +282,23 @@ main {
   border: none;
 }
 
-#covidCar{
+#covidCar {
   margin: 10px;
 }
 
-#lingkunganCar{
+#lingkunganCar {
   margin: 10px;
 }
 
-#udaraCar{
+#udaraCar {
   margin: 10px;
 }
 
-#artikelCar{
+#artikelCar {
   margin: 10px;
 }
 
-.petunjukHalaman{
+.petunjukHalaman {
   margin-left: 30px;
 }
 
@@ -314,27 +314,27 @@ footer {
 
 /*validation */
 
-.validation-user{
+.validation-user {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin-top: 50px;
   border-radius: 5px;
   width: 400px;
-  height:  500px;
+  height: 500px;
 }
 
-.btn-validation{
+.btn-validation {
   background-color: #92E3A9;
 }
 
 
 /*Login Validation*/
 
-.card-right-validation{
+.card-right-validation {
   background-color: #92E3A9;
   width: 400px;
 }
 
-.card-img-overlay{
+.card-img-overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,7 +342,7 @@ footer {
   font-weight: 900px;
 }
 
-.btn-loginValidation{
+.btn-loginValidation {
   background-color: #92E3A9;
 }
 
@@ -374,6 +374,7 @@ footer {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

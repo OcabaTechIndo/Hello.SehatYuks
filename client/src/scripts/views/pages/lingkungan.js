@@ -1,4 +1,5 @@
-import DataAPI from "../../data/dataAPI";
+/* eslint-disable import/extensions */
+import DataAPI from '../../data/dataAPI';
 import '../templates/template-lingkungan.js';
 
 const LingkunganPage = {

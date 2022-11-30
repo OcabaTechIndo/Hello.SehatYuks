@@ -6,6 +6,7 @@ import ObatPage from '../views/pages/pages-info-obat';
 import ObatFavorite from '../views/pages/obat_favorite';
 import UdaraSegarPage from '../views/pages/udara_segar';
 import detailObatPage from '../views/pages/detail-obat-page';
+import userLogin from '../views/pages/login.user';
 
 const routes = {
     '/': HomePage,
@@ -17,6 +18,7 @@ const routes = {
     '/obat': ObatPage,
     '/obat_favorite': ObatFavorite,
     '/detailObatPage/:id': detailObatPage,
+    '/login': userLogin,
 };
 
 export default routes;

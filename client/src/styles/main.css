@@ -311,3 +311,24 @@ footer {
   background-color: #1392E9;
   text-align: center;
 }
+
+/*validation */
+
+.validation-user{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 50px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.btn-validation{
+  background-color: #92E3A9;
+}
+
+
+/*Login Validation*/
+
+
+.btn-loginValidation{
+  background-color: #92E3A9;
+}

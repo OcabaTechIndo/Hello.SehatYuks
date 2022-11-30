@@ -9,19 +9,15 @@ class DbArticle {
     async insertArticleData(ArticleData) {
         try {
             const { title, description } = ArticleData;
-            const insertId = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO article_table (title, description VALUES (?,?);";
+            const response = await new Promise((resolve, reject) => {
+                const query = "INSERT INTO article_table (title, description) VALUES (?,?);";
 
                 connection.query(query, [title, description] , (err, result) => {
                     if (err) reject(new Error(err.message));
-                    resolve(result.insertId);
+                    resolve(result);
                 })
             });
-            return {
-                id : insertId,
-                title :title,
-                description: description
-            };
+            return response;
         } catch (error) {
             console.log(error);
         }

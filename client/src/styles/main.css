@@ -319,7 +319,16 @@ footer {
   margin-top: 50px;
   border-radius: 5px;
   width: 400px;
-  height: 500px;
+  height: 300px;
+}
+
+.user-valid{
+  margin-top: 50px;
+} 
+
+.alert-user{
+  font-size: small;
+  padding: 5px;
 }
 
 .btn-validation {
@@ -355,7 +364,7 @@ footer {
   right: 0;
   bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
 }
 

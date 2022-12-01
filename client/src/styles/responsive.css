@@ -6,9 +6,6 @@
   .katalog-info {
     width: 350px;
   }
-
-
-
 }
 
 @media screen and (min-width: 700px) {
@@ -52,6 +49,18 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .validation-user {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   #hasil {
     display: grid;
@@ -69,18 +78,5 @@
 
   .katalog-info {
     width: 340px;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .carousel-cell img {
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .validation-user{
-    width: 100%;
   }
 }

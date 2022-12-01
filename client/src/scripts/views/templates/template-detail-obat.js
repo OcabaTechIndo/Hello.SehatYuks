@@ -1,6 +1,3 @@
-import GLOBAL_VAR from "../../globals/golbalVariabel";
-
-
 const templateDetailObat = (obat) => `
 <div class="card" class="col" style="width: 18rem;">
 <img src="" class="card-img-top" alt="...">

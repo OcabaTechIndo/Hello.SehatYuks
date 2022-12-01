@@ -12,18 +12,18 @@ class DbDrug {
 
     async insertDrugData(DrugData) {
         try {
-            const { Summary, name_general, image_drug } = DrugData;
+            const { background, name_general, image_drug } = DrugData;
             const insertId = await new Promise((resolve, reject) => {
                 const query = "INSERT INTO drug_table (Summary, name_general, image_drug) VALUES (?,?,?);";
 
-                connection.query(query, [Summary, name_general, image_drug] , (err, result) => {
+                connection.query(query, [background, name_general, image_drug] , (err, result) => {
                     if (err) reject(new Error(err.message));
                     resolve(result.insertId);
                 })
             });
             return {
                 id : insertId,
-                Summary: Summary,
+                background: background,
                 name_general: name_general, 
                 image_drug: image_drug,
             };

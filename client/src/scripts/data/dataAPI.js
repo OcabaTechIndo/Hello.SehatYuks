@@ -11,6 +11,23 @@ class DataAPI {
         const responseJSON = await response.json();
         return responseJSON.obat;
     }
+
+    // eslint-disable-next-line no-empty-function
+    static async userLogin(user) {
+        const response = await fetch('http://localhost:9090/user/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: user,
+        });
+        return response.json();
+    }
+
+    // static async getUser(){
+    //     const response
+    // }
 }
 
 export default DataAPI;

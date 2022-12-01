@@ -23,7 +23,7 @@ class DbUser {
             });
             return response
         }catch(err){
-            return " erro data tidak boleh kosong";
+            console.log(err)
         }
     }
 

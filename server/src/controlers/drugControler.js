@@ -12,23 +12,20 @@ class DbDrug {
 
     async insertDrugData(DrugData) {
         try {
-            const { background, brand_name, name_general, numberdrugaccess, summary, indicator } = DrugData;
+            const { Summary, name_general, image_drug } = DrugData;
             const insertId = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO drug_table (background, brand_name, name_general, numberdrugaccess, summary, indicator) VALUES (?,?,?,?,?,?);";
+                const query = "INSERT INTO drug_table (Summary, name_general, image_drug) VALUES (?,?,?);";
 
-                connection.query(query, [background, brand_name, name_general, numberdrugaccess, summary, indicator] , (err, result) => {
+                connection.query(query, [Summary, name_general, image_drug] , (err, result) => {
                     if (err) reject(new Error(err.message));
                     resolve(result.insertId);
                 })
             });
             return {
                 id : insertId,
-                background: background, 
-                brand_name: brand_name, 
+                Summary: Summary,
                 name_general: name_general, 
-                numberdrugaccess: numberdrugaccess, 
-                summary: summary,
-                indicator: indicator
+                image_drug: image_drug,
             };
         } catch (error) {
             console.log(error);

@@ -6,6 +6,7 @@ const DbUser = require('../controlers/userControler');
 module.exports = {
     createDataUser: (req, res) => {
         const body = req.body;
+        console.log(body);
         const salt = genSaltSync(10);
         body.password = hashSync(body.password, salt);
         const dataBase = DbUser.getInstaceUser();
@@ -56,6 +57,7 @@ module.exports = {
                     })
                     return res.json({
                         success: 1,
+                        user: data,
                         message: "login successfully",
                         token: jsontoken
                     });

@@ -1,4 +1,38 @@
+@media screen and (min-width: 376px) {
+  .image_login_content {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .justify-content-evenly {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .image_login_content {
+    display: grid;
+    width: 350px;
+    height: 320px;
+    margin: auto 0;
+  }
+
+  .form_content {
+    display: grid;
+    position: relative;
+    width: 400px;
+  }
+}
+
 @media screen and (min-width: 500px) {
+
+  /* Home page */
   .katalog {
     width: 350px;
   }

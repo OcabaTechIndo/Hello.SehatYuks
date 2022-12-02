@@ -8,11 +8,11 @@ const DbDrug = require('../controlers/drugControler')
 module.exports = {
         createDrug : (request, response) => {
             const {
-                background, name_general, image_drug
+                Summary, name_general, image_drug, indication, brand_name, background
             } = request.body; 
         
             const DrugData = {
-                background, name_general, image_drug
+                Summary, name_general, image_drug, indication, brand_name, background
             }
             const dataBase = DbDrug.getInstaceDrug();
             const result = dataBase.insertDrugData(DrugData);

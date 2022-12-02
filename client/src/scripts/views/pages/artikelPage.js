@@ -1,5 +1,5 @@
-import DataAPI from "../../data/dataAPI";
-import '../templates/template-artikel.js';
+import DataAPI from '../../data/dataAPI';
+import '../templates/template-artikel';
 
 const ArtikelPage = {
     async render() {
@@ -12,12 +12,24 @@ const ArtikelPage = {
 
     // eslint-disable-next-line no-empty-function
     async afterRender() {
-      //tinggal ganti data api
-      const dataArtikel = await DataAPI.GET_obat();
-      console.log(dataArtikel);
+      const dataArtikel = await DataAPI.getArticle();
+      const dataFix = dataArtikel.Article;
       const containerArtikel = document.querySelector('artikel-page');
-      containerArtikel.artikelSehat = dataArtikel;
-    },
+      const elemAr = containerArtikel.elementListArticle;
+      elemAr.innerHTML = '';
+
+      dataFix.forEach((ar) => {
+        elemAr.innerHTML += `
+            <div class="col" id="artikelCar" style="width: 18rem;">
+                <div class="card-body">
+                <h2> ${ar.title} </h2>
+                <P> ${ar.description} </p>
+                </div>
+                <a href="#" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
+            </div>
+        `;
+      });
+   },
   };
 
   export default ArtikelPage;

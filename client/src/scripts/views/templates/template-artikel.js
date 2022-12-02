@@ -1,7 +1,15 @@
 class Artikel extends HTMLElement {
-    set artikelSehat(sehat) {
-        this._artikelSehat = sehat;
+    constructor() {
+        super();
         this.render();
+    }
+
+    set artikelSehat(value) {
+        this._artikelSehat = value;
+    }
+
+    get elementListArticle() {
+        return this.querySelector('#areaArtikel');
     }
 
     render() {
@@ -13,25 +21,9 @@ class Artikel extends HTMLElement {
         </ol>
         </nav>
         <div id="drop_list" class="list_content d-flex container text-center">
-        <div class="container row" id="areaArtikel"></div>
+        <div class="row" id="areaArtikel"></div>
         </div>
         `;
-
-        const artikelContainer = this.querySelector('#areaArtikel');
-        artikelContainer.innerHTML = '';
-        this._artikelSehat.forEach((/* belum ada parameter */) => {
-            artikelContainer.innerHTML += `
-            <div class="card col-" id="artikelCar" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                <img src="" alt="ini gambar">
-                <h2> Judul Info kesehatan </h2>
-                <P> loren ipsum bklalalallala </p>
-                </div>
-                <a href="#" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
-            </div>
-            `;
-        });
     }
 }
 

@@ -25,9 +25,15 @@ class DataAPI {
         return response.json();
     }
 
-    // static async getUser(){
-    //     const response
-    // }
+    static async getArticle() {
+        const response = await fetch('http://localhost:9090/article/list', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        return response.json();
+    }
 }
 
 export default DataAPI;

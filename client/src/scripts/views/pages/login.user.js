@@ -75,7 +75,10 @@ const userLogin = {
                     spin.removeAttribute('hidden');
                     setTimeout(() => {
                         spin.setAttribute('hidden', '');
-                    }, 2000);
+                        window.location.href = '#/home';
+                        const elementNav = document.querySelector('.btn-loginValidation');
+                        elementNav.setAttribute('hidden', '');
+                    }, 3000);
             }
         };
     },

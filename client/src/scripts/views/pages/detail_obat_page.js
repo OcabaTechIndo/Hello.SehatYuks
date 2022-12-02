@@ -9,17 +9,19 @@ const detailObat = {
         <div tabindex="0" class="container text-center">
         <div class="row" id="detailObat"></div>
         </div>
-        `;
-    },
+            `;
+      },
 
-    async afterRender() {
+      // eslint-disable-next-line no-empty-function
+      async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
-        const obat = await DataAPI.GET_obat(url.id);
+        console.log(url);
+        const obat = await DataAPI.detailObat(url.id);
+        const dataFix = obat.data[0];
+        console.log(dataFix);
         const tampilkanDetailObat = document.querySelector('#detailObat');
-        console.log(obat);
-        tampilkanDetailObat.innerHTML = '';
-        tampilkanDetailObat.innerHTML = templateDetailObat(obat);
-    },
+        tampilkanDetailObat.innerHTML = templateDetailObat(dataFix);
+      },
 };
 
 export default detailObat;

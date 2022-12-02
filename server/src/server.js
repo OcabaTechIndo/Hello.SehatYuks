@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended : false }));
 require ('./endpoint/drug.router')(app)
 require('./endpoint/user.router')(app)
 require('./endpoint/article.router')(app)
+require('./endpoint/answer.route')(app)
 
 app.listen(process.env.PORT, () => {
     console.log(`server running`)

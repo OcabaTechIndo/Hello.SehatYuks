@@ -26,20 +26,18 @@ class Obat extends HTMLElement {
         elementListObat.innerHTML = '';
         this._obatData.forEach((obat) => {
             elementListObat.innerHTML += `
-            <div class="container px-4 text-center">
-                <div class="card text-left col-" id="obatCar" style="width: 18rem;">
-                    <div class="text-center">
-                        <img src="${obat.image_drug}" class="img-fluid" alt="...">
-                    </div>
-                <div class="card-body">
-                    <h5 class="card-title">Background</h5>
-                    <p class="card-text">${obat.background}</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Name General Grug : ${obat.name_general}</li>
-                </ul>
-                <a href="#/detailObatPage" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
-          </div>
+            <div class="card text-left col-" id="obatCar" style="width: 18rem;">
+            <div class="text-center divGambarObat">
+                <img src="${obat.image_drug}" class="img-fluid gambarObat" alt="...">
+            </div>
+        <div class="card-body">
+            <h5 class="card-title">Background</h5>
+            <p class="card-text">${obat.summary}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Name General Grug : ${obat.name_general}</li>
+        </ul>
+        <a href="#/detail_obat_page/${obat.id}" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
             `;
         });
     }

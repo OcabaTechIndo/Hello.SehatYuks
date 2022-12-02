@@ -6,7 +6,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -14,6 +13,7 @@ body {
 main {
   padding-bottom: 32px;
   margin-top: 90px;
+  height: 100%;
 }
 
 /*navigasi*/
@@ -307,10 +307,11 @@ main {
 
 /*footer*/
 footer {
-  padding: 16px;
+  padding: 25px;
   background-color: #1392E9;
   text-align: center;
   width: 100%;
+  margin: 0px;
 }
 
 /*validation */
@@ -319,7 +320,15 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 5px;
   width: 400px;
-  height: 300px;
+  height: 600px;
+}
+
+.text-start {
+  margin-top: 50px;
+}
+
+.button_login {
+  margin-top: 70px;
 }
 
 .user-valid {
@@ -336,10 +345,17 @@ footer {
 }
 
 
-/*Login Validation - mobile display*/
+/*Login Validation*/
 .container-sm {
   width: 100%;
   margin: 0 auto;
+}
+
+.login_container {
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  height: 685px;
 }
 
 .container {

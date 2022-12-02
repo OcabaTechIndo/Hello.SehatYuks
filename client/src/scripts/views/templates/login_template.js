@@ -23,7 +23,7 @@ class LoginUser extends HTMLElement {
             <li class="breadcrumb-item active" aria-current="page">Login User</li>
             </ol>
         </nav>
-        <div>
+        <div class="login_container">
         <div hidden id="spinner"></div>
         <div class="alert alert-danger alert-user alert-validation-danger fs-6" role="alert" hidden>
         Invalid email or password !
@@ -43,9 +43,9 @@ class LoginUser extends HTMLElement {
                             <input type="password" class="form-control" id="password" placeholder="*********" required>
                         </div>
                         <div class="container">
-                        <div class="row">
+                        <div class="row button_login">
                             <div class="col">
-                                <button id="btn-submit-login" class="btn btn-validation")>Success</button>
+                                <button id="btn-submit-login" class="btn btn-validation")>Masuk</button>
                             </div>
                             <div class="col" >
                             <p>Daftar</p>

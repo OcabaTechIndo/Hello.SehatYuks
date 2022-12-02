@@ -3,6 +3,7 @@
 /* eslint-disable prefer-template */
 /* eslint-disable quote-props */
 /* eslint-disable no-unused-vars */
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import API_ENDPOINT from '../globals/api_endpoint';
 
 class DataAPI {
@@ -14,7 +15,7 @@ class DataAPI {
 
     // eslint-disable-next-line no-empty-function
     static async userLogin(user) {
-        const response = await fetch('http://localhost:9090/user/login', {
+        const response = await fetch(`${API_ENDPOINT.LOGIN_USER}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,6 +33,11 @@ class DataAPI {
                 'Content-Type': 'application/json',
             },
         });
+        return response.json();
+    }
+
+    static async detailObat(id) {
+        const response = await fetch(`${API_ENDPOINT.DETAIL_OBAT(id)}`);
         return response.json();
     }
 }

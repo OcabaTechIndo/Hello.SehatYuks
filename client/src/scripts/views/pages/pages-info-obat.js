@@ -1,4 +1,5 @@
 import DataAPI from '../../data/dataAPI';
+// eslint-disable-next-line import/extensions
 import '../templates/template-info-obat.js';
 
 const ObatPage = {

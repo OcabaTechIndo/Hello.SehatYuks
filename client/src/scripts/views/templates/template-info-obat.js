@@ -32,12 +32,12 @@ class Obat extends HTMLElement {
             </div>
         <div class="card-body">
             <h5 class="card-title">Background</h5>
-            <p class="card-text">${obat.background}</p>
+            <p class="card-text">${obat.summary}</p>
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Name General Grug : ${obat.name_general}</li>
         </ul>
-        <a href="#/detailObatPage" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
+        <a href="#/detail_obat_page/${obat.id}" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
             `;
         });
     }

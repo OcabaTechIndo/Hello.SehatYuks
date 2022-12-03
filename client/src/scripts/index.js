@@ -5,6 +5,7 @@ import 'regenerator-runtime';
 import '../scss/styles.scss';
 import '../styles/main.css';
 import '../styles/responsive.css';
+import '../styles/style-carousel.css';
 import 'bootstrap';
 import App from './views/app';
 import swRegister from './utils/sw_register';

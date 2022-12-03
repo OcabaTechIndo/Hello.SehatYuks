@@ -1,0 +1,47 @@
+
+
+.home-list-element{
+    width: 98%;
+    height: 600px;
+    /*background: red;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+
+section .card-product-obat{
+    min-width: 24%;
+    background: whitesmoke;
+    margin:  0 60px  0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    
+}
+
+
+p .button-slider{
+    font-size: 80px;
+}
+
+.button-slider:hover{
+    background-color: black;
+}
+
+
+
+@media (max-width: 600px) {
+    header p span{
+        font-size: 30px;
+    }
+    section .card-product-obat {
+        min-width: 49%;
+        margin:  0 10px  0 0;
+    }
+}

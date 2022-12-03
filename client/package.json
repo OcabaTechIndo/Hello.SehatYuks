@@ -56,6 +56,8 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "flickity": "^3.0.0",
+    "fullpage.js": "^4.0.15",
+    "jquery": "^3.6.1",
     "regenerator-runtime": "^0.13.10"
   }
 }

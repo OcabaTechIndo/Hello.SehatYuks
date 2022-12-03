@@ -1,0 +1,27 @@
+const DbCovid = require('../controlers/covidControler')
+    module.exports = {
+        createCovid: (request, response) => {
+            const {
+                title, description
+            } = request.body; 
+        
+            const CovidData = {
+                title, description
+            }
+            const dataBase = DbCovid.getInstaceCovid();
+            const result = dataBase.insertCovidData(CovidData);
+        
+            result
+            .then(data => response.json({ data: data }))
+            .catch(err => console.log(err));
+        },
+        
+       getAllCovid: (request, response) => {
+            const dataBase = DbCovid.getInstaceCovid();
+            const result = dataBase.getAllCovid();
+        
+            result
+            .then(data => response.json({Covid: data}))
+            .catch( err => console.log(err.message))
+        }
+    } 

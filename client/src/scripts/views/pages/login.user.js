@@ -70,7 +70,10 @@ const userLogin = {
                 }, 5000);
             } else {
                 const API = dataApi.token;
+                const userAccessToken = dataApi.user;
+                localStorage.setItem('userAccessToken', JSON.stringify(userAccessToken));
                 localStorage.setItem('tokenAPI', JSON.stringify(API));
+
                 const spin = document.querySelector('#spinner');
                     spin.removeAttribute('hidden');
                     setTimeout(() => {

@@ -50,6 +50,32 @@ class DataAPI {
         const response = await fetch(`${API_ENDPOINT.DETAIL_COVID(id)}`);
         return response.json();
     }
+
+    static async createAnswer(userData) {
+        const response = await fetch(`${API_ENDPOINT.CREATE_ANSWER}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: userData,
+        });
+        return response.json();
+    }
+
+    static async getUserById(id, userAccessToken) {
+        const response = await fetch(`${API_ENDPOINT.GET_USER_BY_ID(id)}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + userAccessToken,
+            },
+        });
+        return response.json();
+    }
+
+    static async getAnswer() {
+        const response = await fetch(`${API_ENDPOINT.GET_ANSWER}`);
+        return response.json();
+    }
 }
 
 export default DataAPI;

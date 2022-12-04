@@ -72,7 +72,7 @@ class DbUser {
         })
         return response
     }catch(err) {
-        return err.message;
+        console.log(err.message);
     }
    }
 

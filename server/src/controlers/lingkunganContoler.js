@@ -8,11 +8,11 @@ class DbLingkungan {
 
     async insertLingkunganData(LingkunganData) {
         try {
-            const { title, description } = LingkunganData;
+            const { title, image, description } = LingkunganData;
             const response = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO lingkungan_table (title, description) VALUES (?,?);";
+                const query = "INSERT INTO lingkungan_table (title, image, description) VALUES (?,?,?);";
 
-                connection.query(query, [title, description] , (err, result) => {
+                connection.query(query, [title, image, description] , (err, result) => {
                     if (err) reject(new Error(err.message));
                     resolve(result);
                 })

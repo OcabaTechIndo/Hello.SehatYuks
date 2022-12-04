@@ -2,7 +2,7 @@ const DbArticle = require('../controlers/articleControler')
     module.exports = {
         createArticle: (request, response) => {
             const {
-                title, description
+                title, image, description
             } = request.body; 
         
             const ArticleData = {

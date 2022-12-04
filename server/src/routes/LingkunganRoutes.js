@@ -2,11 +2,11 @@ const DbLingkungan = require('../controlers/lingkunganContoler')
     module.exports = {
         createLingkungan: (request, response) => {
             const {
-                title, description
+                title, image, description
             } = request.body; 
         
             const LingkunganData = {
-                title, description
+                title, image, description
             }
             const dataBase = DbArticle.getInstaceLingkungan();
             const result = dataBase.insertLingkunganData(LingkunganData);

@@ -2,11 +2,11 @@ const DbCovid = require('../controlers/covidControler')
     module.exports = {
         createCovid: (request, response) => {
             const {
-                title, description
+                title, image, description
             } = request.body; 
         
             const CovidData = {
-                title, description
+                title, image, description
             }
             const dataBase = DbCovid.getInstaceCovid();
             const result = dataBase.insertCovidData(CovidData);

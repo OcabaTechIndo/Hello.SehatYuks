@@ -8,9 +8,9 @@ class DbArticle {
 
     async insertArticleData(ArticleData) {
         try {
-            const { title, description } = ArticleData;
+            const { title, image, description } = ArticleData;
             const response = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO article_table (title, description) VALUES (?,?);";
+                const query = "INSERT INTO article_table (title, image, description) VALUES (?,?,?);";
 
                 connection.query(query, [title, description] , (err, result) => {
                     if (err) reject(new Error(err.message));

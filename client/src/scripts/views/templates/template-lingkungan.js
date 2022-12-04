@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 class Lingkungan extends HTMLElement {
     set lingkunganData(value) {
         this._lingkunganData = value;
@@ -21,7 +22,6 @@ class Lingkungan extends HTMLElement {
 
         // JANGAN DI HAPUS
 
-
      /*   infoLingkungan.innerHTML = '';
         this._lingkunganData.forEach((lingkungan) => {
             infoLingkungan.innerHTML += `
@@ -36,15 +36,16 @@ class Lingkungan extends HTMLElement {
                     <p class="card-text">${lingkungan.numberdrugaccess}</p>
                     <p class="card-text">${lingkungan.summary.slice(0, 20)}</p>
                 </div>
+                // eslint-disable-next-line max-len, max-len
                 <a href="#/detaillingkunganPage" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
             </div>
             `;
             */
-            
+
             // ini hanya trmplate nanti yang di atas tinggal ganti parameter API
 
         infoLingkungan.innerHTML = '';
-        this._lingkunganData.forEach((/*belum ada parameter*/) => {
+        this._lingkunganData.forEach(() => {
             infoLingkungan.innerHTML += `
             <div class="card col-" id="lingkunganCar" style="width: 18rem;">
             <img src="" class="card-img-top" alt="...">
@@ -60,4 +61,4 @@ class Lingkungan extends HTMLElement {
     }
 }
 
-customElements.define('info-lingkungan', Lingkungan);
+customElements.define('template-info-lingkungan', Lingkungan);

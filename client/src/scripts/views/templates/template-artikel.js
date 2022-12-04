@@ -20,7 +20,7 @@ class Artikel extends HTMLElement {
         <li class="breadcrumb-item active" aria-current="page">Info Covid-19</li>
         </ol>
         </nav>
-        <div id="drop_list" class="list_content d-flex container text-center">
+        <div id="drop_list" class="list_content d-flex text-center">
         <div class="row" id="areaArtikel"></div>
         </div>
         `;

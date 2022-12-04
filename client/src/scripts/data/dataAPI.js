@@ -40,6 +40,16 @@ class DataAPI {
         const response = await fetch(`${API_ENDPOINT.DETAIL_OBAT(id)}`);
         return response.json();
     }
+
+    static async getCovid() {
+        const response = await fetch(`${API_ENDPOINT.COVID_LIST}`);
+        return response.json();
+    }
+
+    static async detailCovid(id) {
+        const response = await fetch(`${API_ENDPOINT.DETAIL_COVID(id)}`);
+        return response.json();
+    }
 }
 
 export default DataAPI;

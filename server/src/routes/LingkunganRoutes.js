@@ -23,5 +23,15 @@ const DbLingkungan = require('../controlers/lingkunganContoler')
             result
             .then(data => response.json({Lingkungan: data}))
             .catch( err => console.log(err.message))
+        },
+
+        getIdLingkungan: (request, response) => {
+            const { id } = request;
+            const dataBase = DbLingkungan.getInstaceLingkungan();
+            const result = dataBase.getLingkunganById(id);
+
+            result
+            .then(data => response.json({ Lingkungan: data}))
+            .catch( err => console.log(err));
         }
     } 

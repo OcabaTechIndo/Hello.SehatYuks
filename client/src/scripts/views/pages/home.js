@@ -25,12 +25,12 @@ const span = elementCarousel;
 const product = elementSliding;
 const product_page = Math.ceil(product.length / 4);
 let l = 0;
-let movePer = 25.34;
-let maxMove = 100;
+let movePer = 40.34;
+let maxMove = 80;
 // mobile_view
 const mob_view = window.matchMedia('(max-width: 768px)');
 if (mob_view.matches) {
-     movePer = 30.36;
+     movePer = 40.36;
      maxMove = 504;
  }
 

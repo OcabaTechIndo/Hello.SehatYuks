@@ -1,4 +1,5 @@
-import DataAPI from "../../data/dataAPI";
+import DataAPI from '../../data/dataAPI';
+// eslint-disable-next-line import/extensions
 import '../templates/template-covid-19.js';
 
 /* eslint-disable no-empty-function */
@@ -13,11 +14,10 @@ const Covid19Page = {
       },
 
       async afterRender() {
-        //tinggal ganti data api
-        const dataCovid19 = await DataAPI.GET_obat();
-        console.log(dataCovid19);
+        const dataCovid19 = await DataAPI.getCovid();
+        const dataFixCovid = dataCovid19.Covid;
         const containerCovid19 = document.querySelector('info-covid19');
-        containerCovid19.covidData = dataCovid19;
+        containerCovid19.covidData = dataFixCovid;
       },
 };
 

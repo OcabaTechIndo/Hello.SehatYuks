@@ -26,7 +26,7 @@ class DbCovid {
     async getAllCovid() {
         try{
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM covid_table";
+                const query = "SELECT id,title FROM covid_table";
 
                 connection.query(query, (err, results) => {
                     if (err) reject(new Error(err.message));

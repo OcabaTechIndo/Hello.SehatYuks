@@ -1,5 +1,35 @@
 
 
+		main header{
+			width: 98%;
+			height: 60px;
+			/*background: gray;*/
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			justify-content: space-between;
+			border-bottom: 2px solid #ddd;
+            padding: 50px;
+            position: relative;
+            top: 30px;
+		}
+		header p span{
+			font-size: 40px;
+		    margin: 0 5px;
+		    cursor: pointer;
+		    color: #555;
+		     width: 30px;
+		    height: 30px;
+		    display: inline-block;
+		    line-height: 19px;
+		    text-align: center;
+		    border-radius: 3px;
+		}
+		header p span:hover{
+			background: #222;
+    		color: white;
+		}
+
 .home-list-element{
     width: 98%;
     height: 600px;
@@ -26,22 +56,28 @@ section .card-product-obat{
 }
 
 
-p .button-slider{
-    font-size: 80px;
-}
-
-.button-slider:hover{
-    background-color: black;
-}
-
-
-
 @media (max-width: 600px) {
-    header p span{
+    .content-button p span{
         font-size: 30px;
     }
     section .card-product-obat {
         min-width: 49%;
-        margin:  0 10px  0 0;
+        margin:  0 100px  0 0;
+    }
+
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        width: 90%;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header p span{
+        font-size: 30px;
     }
 }
+
+
+/* */

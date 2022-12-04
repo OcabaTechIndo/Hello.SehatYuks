@@ -20,13 +20,19 @@ const ArtikelPage = {
 
       dataFix.forEach((ar) => {
         elemAr.innerHTML += `
-            <div class="col" id="artikelCar" style="width: 18rem;">
-                <div class="card-body">
-                <h2> ${ar.title} </h2>
-                <P> ${ar.description} </p>
-                </div>
-                <a href="#" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
+            <div class="card text-left col-" id="obatCar" style="width: 18rem;">
+            <div class="text-center divGambarObat">
+                <img src="" class="img-fluid gambarObat" alt="...">
             </div>
+            <div class="card-body">
+                <h5 class="card-title">${ar.title} </h5>
+                <p class="card-text">${ar.description}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Name General Grug : </li>
+            </ul>
+            <a href="#/detail_obat_page/" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
+        </div>
         `;
       });
    },

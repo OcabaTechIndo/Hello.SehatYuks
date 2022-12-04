@@ -23,5 +23,15 @@ const DbCovid = require('../controlers/covidControler')
             result
             .then(data => response.json({Covid: data}))
             .catch( err => console.log(err.message))
+        },
+
+        getCovidByIdCovid: (request, response) => {
+            const { id } = request.params;
+            const dataBase = DbCovid.getInstaceCovid();
+            const result = dataBase.getCovidById(id);
+        
+            result
+            .then(data => response.json({Covid: data}))
+            .catch( err => console.log(err.message))
         }
     } 

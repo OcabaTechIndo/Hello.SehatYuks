@@ -45,7 +45,7 @@ class LoginUser extends HTMLElement {
                         <div class="container">
                         <div class="row button_login">
                             <div class="col">
-                                <button id="btn-submit-login" class="btn btn-validation")>Masuk</button>
+                                <button id="btn-submit-login" class="btn btn-validation">Masuk</button>
                             </div>
                             <div class="col" >
                             <p>Daftar</p>

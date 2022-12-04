@@ -26,7 +26,7 @@ class DbLingkungan {
     async getAllLingkungan() {
         try{
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM lingkungan_table";
+                const query = "SELECT id,title FROM lingkungan_table";
 
                 connection.query(query, (err, results) => {
                     if (err) reject(new Error(err.message));

@@ -13,11 +13,7 @@ class Obat extends HTMLElement {
         <li class="breadcrumb-item active" aria-current="page">Info Obat</li>
         </ol>
         </nav>
-            <div id="list_obat" class="list_container container">
-                <img src="./logo/obat_heart.png" alt="">
-                <p>Masih ragu cara memilih obat yang tepat? jangan khawatir, IRIS akan membantu kamu</p>
-                <div id="searchObat" class"obatSearchContainer"></div>
-                <div id="drop_list" class="list_content d-flex container text-center">
+            <div id="list_obat" class="list_container">
                 <div class="row" id="obat_card_list"></div>
                 </div>
             </div>
@@ -27,17 +23,18 @@ class Obat extends HTMLElement {
         this._obatData.forEach((obat) => {
             elementListObat.innerHTML += `
             <div class="card text-left col-" id="obatCar" style="width: 18rem;">
-            <div class="text-center divGambarObat">
-                <img src="${obat.image_drug}" class="img-fluid gambarObat" alt="...">
+                <div class="text-center divGambarObat">
+                    <img src="${obat.image_drug}" class="img-fluid gambarObat" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Background</h5>
+                    <p class="card-text">${obat.summary}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Name General Grug : ${obat.name_general}</li>
+                </ul>
+                <a href="#/detail_obat_page/${obat.id}" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
             </div>
-        <div class="card-body">
-            <h5 class="card-title">Background</h5>
-            <p class="card-text">${obat.summary}</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Name General Grug : ${obat.name_general}</li>
-        </ul>
-        <a href="#/detail_obat_page/${obat.id}" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
             `;
         });
     }

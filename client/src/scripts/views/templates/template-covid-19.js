@@ -19,16 +19,15 @@ class covid19 extends HTMLElement {
 
         const infoCovid19 = this.querySelector('#areaCovid19');
         infoCovid19.innerHTML = '';
-        this._covidData.forEach((/*belum apa variabel */) => {
+        this._covidData.forEach((covid) => {
             infoCovid19.innerHTML += `
             <div class="card col-" id="covidCar" style="width: 18rem;">
             <img src="" class="card-img-top" alt="...">
                 <div class="card-body">
-                <img src="" alt="ini gambar">
-                <h2> Judul Info kesehatan </h2>
-                <P> loren ipsum bklalalallala </p>
+                <img src="" alt="ini g">
+                <P>  ${covid.title}  </p>
                 </div>
-                <a href="#/detaillingkunganPage" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
+                <a href="#/detail_covid/${covid.id}" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
             </div>
             `;
         });

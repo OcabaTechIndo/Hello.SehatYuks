@@ -15,6 +15,14 @@ import '../templates/page_komunitas_lingkungan';
 const KomunitasLingkunganPage = {
     async render() {
         return `
+        <div class="nav-point">
+        <nav class="ml-5" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Komunitas</li>
+            </ol>
+        </nav>
+        </div>
                 <komunitas-lingkungan-element>
                 </komunitas-lingkungan-element>
             `;

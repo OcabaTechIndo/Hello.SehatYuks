@@ -18,6 +18,7 @@ main {
 
 /*navigasi*/
 
+
 .navigasi-menu {
   padding-left: 23px;
   padding-right: 23px;
@@ -273,14 +274,17 @@ main {
   margin: 0 auto;
 }
 
-#bacaObat {
+#tombolBacaObat {
   min-height: 44px;
   min-width: 44px;
-  margin-bottom: 10px;
+  margin: 10px;
   background-color: #92E3A9;
   color: black;
-  border: none;
+  border-radius: 5px;
+  padding-top: 9px;
+  border-color: transparent;
 }
+
 
 #covidCar {
   margin: 10px;
@@ -424,11 +428,60 @@ footer {
   width: 80px;
   height: 80px;
   border: 2px solid #f3f3f3;
-  border-top: 3px solid #f25a41;
+  border-top: 3px solid #92E3A9;
   border-radius: 100%;
   will-change: transform;
   animation: spin 1s infinite linear;
 }
+
+
+/*list obat*/
+
+.divGambarObat{
+  margin-top: 10px;
+  width: 100%;
+}
+.divGambarObat img{
+  max-height: 177px;
+  min-width: 250px;
+  border-radius: 2px;
+}
+
+/* Detail Obat*/
+.detail-obat{
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+.imgDetailObat{
+  float: left;
+  width: 40%;
+}
+
+.imgDetailObat img{
+  max-height: 360px;
+  border-radius: 5px;
+}
+
+aside {
+  float: right;
+  width: 60%;
+  padding-left: 50px;
+  text-align: justify;
+  padding-top: 33.5px;
+}
+
+
+.judulObat{
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+
+
+
 
 @keyframes spin {
   from {

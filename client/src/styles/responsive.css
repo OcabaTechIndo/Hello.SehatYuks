@@ -122,3 +122,23 @@
     width: 340px;
   }
 }
+
+@media screen and (max-width: 580px){
+  .nav-point{
+    margin: 0 auto;
+   }
+}
+@media screen and (min-width: 540px){
+  .nav-point{
+    margin-left: 30px;
+   }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .imgDetailObat,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -15,6 +15,7 @@ class LingkunganTemplate extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="container px-4 p-5">
+        <div hidden id="spinner"></div>
             <div class="text-center">
                 <h2>Hallo Selamat Datang di Komunitas Lingkungan</h2>
             </div>

@@ -7,8 +7,8 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/style-carousel.css';
 import 'bootstrap';
-import App from './views/app';
 import swRegister from './utils/sw_register';
+import App from './views/app';
 
 const app = new App({
   content: document.querySelector('#mainContent'),

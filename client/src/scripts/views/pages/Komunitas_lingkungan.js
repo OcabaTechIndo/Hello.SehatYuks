@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // /* eslint-disable no-unused-vars */
 // /* eslint-disable no-useless-return */
 // /* eslint-disable no-trailing-spaces */
@@ -103,7 +104,7 @@
 //             //             <div class="card-body">
 //             //                 <blockquote class="blockquote mb-0">
 //             //                     <p>${answ.description}</p>
-//             // eslint-disable-next-line max-len
+//             // eslint-disable-next-line max-len, max-len
 //             //                     <span class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></span>
 //             //                 </blockquote>
 //             //             </div>

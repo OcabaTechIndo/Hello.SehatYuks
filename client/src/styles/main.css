@@ -411,8 +411,29 @@ footer {
 
 /*profil about us*/
 .profil_container {
+  margin: auto auto;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
 
+.profil_card {
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 270px;
+}
+
+.profil_body {
+  font-size: 13.5px;
+  padding: 0px 10px;
+}
+
+.profil_body a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #165a72;
 }
 
 /*spin*/

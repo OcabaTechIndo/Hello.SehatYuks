@@ -6,13 +6,14 @@ class AboutUs extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <div id="profil_card" class="profil_container">
-                <div class="profil_1">
+            <div id="profil_content" class="profil_container">
+                <div class="profil_card">
                     <div class="profil_head">
                         <figure>
                             <img src="" alt="Foto Front End 1 Muhammad Ilham F">
                             <figcaption>Muhammad Ilham F</figcaption>
                         </figure>
+                        <hr>
                     </div>
                     <div class="profil_body">
                         <p>Muhammad Ilham Febriana</p>
@@ -23,12 +24,13 @@ class AboutUs extends HTMLElement {
                         <a href="https://github.com/Understrike123">GitHub</a>
                     </div>
                 </div>
-                <div class="profil_2">
+                <div class="profil_card">
                     <div class="profil_head">
                         <figure>
                             <img src="" alt="">
                             <figcaption>nama</figcaption>
                         </figure>
+                        <hr>
                     </div>
                     <div class="profil_body">
                         <p>nama</p>
@@ -38,12 +40,13 @@ class AboutUs extends HTMLElement {
                         <p>role pembuatan website ini</p>
                     </div>
                 </div>
-                <div class="profil_3">
+                <div class="profil_card">
                     <div class="profil_head">
                         <figure>
                             <img src="" alt="">
                             <figcaption>nama</figcaption>
                         </figure>
+                        <hr>
                     </div>
                     <div class="profil_body">
                         <p>nama</p>
@@ -53,12 +56,13 @@ class AboutUs extends HTMLElement {
                         <p>role pembuatan website ini</p>
                     </div>
                 </div>
-                <div class="profil_4">
+                <div class="profil_card">
                     <div class="profil_head">
                         <figure>
                             <img src="" alt="">
                             <figcaption>nama</figcaption>
                         </figure>
+                        <hr>
                     </div>
                     <div class="profil_body">
                         <p>nama</p>

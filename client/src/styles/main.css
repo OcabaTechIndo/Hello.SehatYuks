@@ -261,7 +261,7 @@ main {
 }
 
 /*tampilan obat*/
-#obatCar {
+#containerCar {
   margin: 10px;
 }
 
@@ -274,7 +274,7 @@ main {
   margin: 0 auto;
 }
 
-#tombolBacaObat {
+#tombolBaca {
   min-height: 44px;
   min-width: 44px;
   margin: 10px;
@@ -435,7 +435,7 @@ footer {
 }
 
 
-/*list obat*/
+/*list car*/
 
 .divGambarObat{
   margin-top: 10px;
@@ -447,25 +447,40 @@ footer {
   border-radius: 2px;
 }
 
-/* Detail Obat*/
-.detail-obat{
+/*artikel*/
+.divGambarArtikel{
+  margin-top: 10px;
+  width: 100%;
+}
+.divGambarArtikel img{
+  min-height: 177px;
+  min-width: 250px;
+  border-radius: 2px;
+}
+
+
+
+
+
+/* All detail page*/
+.detail-view{
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
 
 }
 
-.imgDetailObat{
+.kiri{
   float: left;
   width: 40%;
 }
 
-.imgDetailObat img{
+.kiri img{
   max-height: 360px;
   border-radius: 5px;
 }
 
-aside {
+.kanan {
   float: right;
   width: 60%;
   padding-left: 50px;
@@ -474,9 +489,10 @@ aside {
 }
 
 
-.judulObat{
+.titlePage{
   padding-bottom: 15px;
   font-weight: bold;
+  text-align: center;
 }
 
 

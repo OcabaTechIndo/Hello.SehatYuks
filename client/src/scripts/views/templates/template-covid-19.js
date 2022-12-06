@@ -26,7 +26,7 @@ class covid19 extends HTMLElement {
                 <div class="card-body">
                 <h3>${covid.title}</h3>
                 </div>
-                <a href="#/detail_covid/${covid.id}" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
+                <a href="#/detail_covid/${covid.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
             </div>
             `;
         });

@@ -409,6 +409,11 @@ footer {
   background-color: #92E3A9;
 }
 
+/*profil about us*/
+.profil_container {
+  display: grid;
+
+}
 
 /*spin*/
 #spinner:not([hidden]) {
@@ -437,22 +442,24 @@ footer {
 
 /*list car*/
 
-.divGambarObat{
+.divGambarObat {
   margin-top: 10px;
   width: 100%;
 }
-.divGambarObat img{
+
+.divGambarObat img {
   max-height: 177px;
   min-width: 250px;
   border-radius: 2px;
 }
 
 /*artikel*/
-.divGambarArtikel{
+.divGambarArtikel {
   margin-top: 10px;
   width: 100%;
 }
-.divGambarArtikel img{
+
+.divGambarArtikel img {
   min-height: 177px;
   min-width: 250px;
   border-radius: 2px;
@@ -463,19 +470,19 @@ footer {
 
 
 /* All detail page*/
-.detail-view{
+.detail-view {
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
 
 }
 
-.kiri{
+.kiri {
   float: left;
   width: 40%;
 }
 
-.kiri img{
+.kiri img {
   max-height: 360px;
   border-radius: 5px;
 }
@@ -489,7 +496,7 @@ footer {
 }
 
 
-.titlePage{
+.titlePage {
   padding-bottom: 15px;
   font-weight: bold;
   text-align: center;

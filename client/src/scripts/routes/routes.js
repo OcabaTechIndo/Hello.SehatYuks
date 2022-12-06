@@ -12,11 +12,13 @@ import AnswerPage from '../views/pages/answer_page';
 import RegisterPage from '../views/pages/register_page';
 import detailArtikel from '../views/pages/detail_artikel_page';
 import FoodHealthPage from '../views/pages/food_health._page';
+import aboutUsPage from '../views/pages/aboutus_page';
 
 const routes = {
     '/': HomePage,
     '/home': HomePage,
     '/artikel': artikelPage,
+    '/profile': aboutUsPage,
     '/lingkungan': LingkunganPage,
     '/covid19': Covid19Page,
     '/obat': ObatPage,

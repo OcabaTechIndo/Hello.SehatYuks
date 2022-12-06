@@ -7,9 +7,8 @@ class DetailCovid extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="card col-" id="covidCar" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
+        <img src="${this._detailCovid.image}" class="card-img-top" alt="...">
             <div class="card-body">
-            <img src="" alt="ini g">
             <h3>${this._detailCovid.title}</h3>
             <P>  ${this._detailCovid.description}  </p>
             </div>

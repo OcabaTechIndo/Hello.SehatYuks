@@ -26,7 +26,7 @@ class DbArticle {
     async getAllArticle() {
         try{
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM article_table";
+                const query = "SELECT id,image,title FROM article_table";
 
                 connection.query(query, (err, results) => {
                     if (err) reject(new Error(err.message));

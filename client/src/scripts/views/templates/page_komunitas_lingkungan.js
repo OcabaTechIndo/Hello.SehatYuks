@@ -20,20 +20,20 @@ class LingkunganTemplate extends HTMLElement {
                 <h2>Hallo Selamat Datang di Komunitas Lingkungan</h2>
             </div>
             <div class="row p-5">
-                <div class="col-4">
+                <div class="col-8">
                     <div class="p-3 border bg-light">
                     <form>
                         <div class="mb-3">
-                            <label for="answer" class="form-label"></label>
+                            <label for="answer" class="form-label">Masukan Serta Categori Pertanyaan</label>
                             <textarea class="form-control" id="answer" placeholder="Masukkan Pertanyaan" required rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-info" id="buttonElementAnswer">Info</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-8" id="card_user_answer">
-              
-                </div>
+                <div class="col-4">
+                    
+                <div>
             </div>
 
 

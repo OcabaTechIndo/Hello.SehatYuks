@@ -24,7 +24,7 @@ class Obat extends HTMLElement {
         elementListObat.innerHTML = '';
         this._obatData.forEach((obat) => {
             elementListObat.innerHTML += `
-            <div class="card text-left col-" id="obatCar" style="width: 18rem;">
+            <div class="card text-left col-" id="containerCar" style="width: 18rem;">
                 <div class="text-center divGambarObat">
                     <img src="${obat.image_drug}" class="img-fluid gambarObat" alt="...">
                 </div>
@@ -32,7 +32,7 @@ class Obat extends HTMLElement {
                     <h5 class="card-title text-center"><b>${obat.name_general}</b></h5>
                     <p class="card-text bgObat">${obat.summary.slice(0, 150)}</p>
                 </div>
-                <a href="#/detail_obat_page/${obat.id}" id="tombolBacaObat" class="btn btn-primary">Baca Info Lengkap</a>
+                <a href="#/detail_obat_page/${obat.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
             </div>
             `;
         });

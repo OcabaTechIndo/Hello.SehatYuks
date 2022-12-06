@@ -6,9 +6,6 @@ import '../templates/template-covid-19.js';
 const Covid19Page = {
     async render() {
         return `
-            <h1>Hello Ini adalah halaman Covid 19</h1>
-            <p> tinggal mengganti async after render dengan <br>
-            API covid-19 nanti</p>
             <info-covid19></info-covid19>
             `;
       },

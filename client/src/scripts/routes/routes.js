@@ -8,6 +8,10 @@ import userLogin from '../views/pages/login.user';
 import detailObat from '../views/pages/detail_obat_page';
 import DetailCovidPage from '../views/pages/detail_covid';
 import KomunitasLingkunganPage from '../views/pages/Komunitas_lingkungan';
+import AnswerPage from '../views/pages/answer_page';
+import RegisterPage from '../views/pages/register_page';
+import detailArtikel from '../views/pages/detail_artikel_page';
+import FoodHealthPage from '../views/pages/food_health._page';
 
 const routes = {
     '/': HomePage,
@@ -21,6 +25,10 @@ const routes = {
     '/login': userLogin,
     '/detail_covid/:id': DetailCovidPage,
     '/komunitas_lingkungan': KomunitasLingkunganPage,
+    '/answer_view': AnswerPage,
+    '/register_page': RegisterPage,
+    '/detail_artikel/:id': detailArtikel,
+    '/food_page': FoodHealthPage,
 };
 
 export default routes;

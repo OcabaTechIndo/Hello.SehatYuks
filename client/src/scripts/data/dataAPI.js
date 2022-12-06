@@ -26,8 +26,30 @@ class DataAPI {
         return response.json();
     }
 
+    static async registerUser(user) {
+        const response = await fetch(`${API_ENDPOINT.CREATE_USER}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: user,
+        });
+       return response.json();
+    }
+
     static async getArticle() {
         const response = await fetch('http://localhost:9090/article/list', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        return response.json();
+    }
+
+    static async getArtikelById(id) {
+        const response = await fetch(`${API_ENDPOINT.GET_ARTIKEL_ID(id)}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -74,6 +96,16 @@ class DataAPI {
 
     static async getAnswer() {
         const response = await fetch(`${API_ENDPOINT.GET_ANSWER}`);
+        return response.json();
+    }
+
+    static async getLingkungan() {
+        const response = await fetch(`${API_ENDPOINT.GET_LINGKUNGAN}`);
+        return response.json();
+    }
+
+    static async getFoodHealth() {
+        const response = await fetch(`${API_ENDPOINT.GET_FOOD}`);
         return response.json();
     }
 }

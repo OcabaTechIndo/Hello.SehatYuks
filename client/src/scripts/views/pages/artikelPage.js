@@ -18,9 +18,14 @@ const ArtikelPage = {
 
       dataFix.forEach((ar) => {
         elemAr.innerHTML += `
-        <div class="card text-left col-" id="containerCar" style="width: 18rem;">
-        <div class="text-center divGambarArtikel">
-            <img src="${ar.image}" class="img-fluid gambarArtikel" alt="gambar dari artikel${ar.title}">
+            <div class="card text-left col-" id="obatCar" style="width: 18rem;">
+            <div class="text-center divGambarObat">
+                <img src="${ar.image}" class="img-fluid gambarObat" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${ar.title} </h5>
+            </div>
+            <a href="#/detail_artikel/${ar.id}" id="bacaObat" class="btn btn-primary">Baca Info Lengkap</a>
         </div>
         <div class="card-body">
             <h5 class="card-title text-center"><b>${ar.title}</b></h5>

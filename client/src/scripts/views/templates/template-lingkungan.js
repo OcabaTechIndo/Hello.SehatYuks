@@ -1,8 +1,15 @@
 /* eslint-disable max-len */
 class Lingkungan extends HTMLElement {
-    set lingkunganData(value) {
-        this._lingkunganData = value;
+    constructor() {
+        super();
         this.render();
+    }
+
+    // eslint-disable-next-line class-methods-use-this
+    get lingkunganData() {
+        return {
+            areaList: this.querySelector('#areaLingkungan')
+        };
     }
 
     render() {
@@ -18,7 +25,7 @@ class Lingkungan extends HTMLElement {
         </div>
         `;
 
-        const infoLingkungan = this.querySelector('#areaLingkungan');
+        // const infoLingkungan = this.querySelector('#areaLingkungan');
 
         // JANGAN DI HAPUS
 
@@ -43,21 +50,6 @@ class Lingkungan extends HTMLElement {
             */
 
             // ini hanya trmplate nanti yang di atas tinggal ganti parameter API
-
-        infoLingkungan.innerHTML = '';
-        this._lingkunganData.forEach(() => {
-            infoLingkungan.innerHTML += `
-            <div class="card col-" id="lingkunganCar" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                <img src="" alt="ini gambar">
-                <h2> Judul Info kesehatan </h2>
-                <P> loren ipsum bklalalallala </p>
-                </div>
-                <a href="#/detaillingkunganPage" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
-            </div>
-            `;
-        });
     }
 }
 

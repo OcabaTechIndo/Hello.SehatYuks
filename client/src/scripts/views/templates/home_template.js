@@ -43,7 +43,7 @@ class Home extends HTMLElement {
                             <div class="card-body">
                             <h5 class="card-title">Kesehatana Makanan</h5>
                             <p class="card-text">Tips Menjaga Kesehatan Dengan Mengatur Pola Makan</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#/food_page" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>

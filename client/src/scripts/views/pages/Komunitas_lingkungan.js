@@ -65,7 +65,7 @@ const KomunitasLingkunganPage = {
                     spin.removeAttribute('hidden');
                     setTimeout(async () => {
                         spin.setAttribute('hidden', '');
-                        getItem();
+                        window.location.href = '#/answer_view'
                     }, 3000);
                 } else {
                     console.log('error');
@@ -73,36 +73,49 @@ const KomunitasLingkunganPage = {
                 }
                 // eslint-disable-next-line no-unused-vars
             } else {
-                console.log('Kamu Belum Login');
+                const spin = document.querySelector('#spinner');
+                spin.removeAttribute('hidden');
+                setTimeout(async () => {
+                    spin.setAttribute('hidden', '');
+                    window.location.href = '#/login';
+                }, 3000);
+
                 // eslint-disable-next-line no-useless-return
                 return;
             }
-        });
+            // eslint-disable-next-line no-unused-vars
+        } else {
+            console.log('Kamu Belum Login');
+            // eslint-disable-next-line no-useless-return
+            return;
+        }
+});
 
-        const getAllAnswer = await DataAPI.getAnswer();
-        const getAllCreate = () => {
-            getAllAnswer.answer.forEach((answ) => {
-                containerElement.innerHTML += `
-                <div class="card mt-5">
-                <div class="card-header">
-                    ${answ.name}
-                </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>${answ.description}</p>
-                            <span class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></span>
-                        </blockquote>
-                    </div>
-                </div>
-                `;
-            });
-        }
-        const getItem = () => {
-            if (window.location.pathname === '/') {
-                getAllCreate();
-            }
-        }
-    },
+        // const getAllAnswer = await DataAPI.getAnswer();
+        // const getAllCreate = () => {
+        //     getAllAnswer.answer.forEach((answ) => {
+        //         containerElement.innerHTML += `
+        //         <div class="card mt-5">
+        //         <div class="card-header">
+        //             ${answ.name}
+        //         </div>
+        //             <div class="card-body">
+        //                 <blockquote class="blockquote mb-0">
+        //                     <p>${answ.description}</p>
+        // eslint-disable-next-line max-len
+        //                     <span class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></span>
+        //                 </blockquote>
+        //             </div>
+        //         </div>
+        //         `;
+        //     });
+        // } 
+        // const getItem = () => {
+        //     if (window.location.pathname === '/'){
+        //         getAllCreate();
+        //     }
+        // }
+      },
 };
 
 export default KomunitasLingkunganPage;

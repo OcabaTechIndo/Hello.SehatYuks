@@ -26,9 +26,9 @@ const KomunitasLingkunganPage = {
                 <komunitas-lingkungan-element>
                 </komunitas-lingkungan-element>
             `;
-      },
+    },
 
-      async afterRender() {
+    async afterRender() {
         const elementGetValue = document.querySelector('komunitas-lingkungan-element');
         const elementFixValueValid = elementGetValue.dataValueAnswer;
         const { answerElement, buttonAnswerElement, containerElement } = elementFixValueValid;
@@ -38,46 +38,46 @@ const KomunitasLingkunganPage = {
                 buttonAnswerElement,
             },
         };
-            data.initiality.buttonAnswerElement.addEventListener('click', async () => {
-                const dataFixUserCreate = data.initiality.answerElement;
-                const tokenUser = JSON.parse(localStorage.getItem('tokenAPI'));
-                const usernameData = JSON.parse(localStorage.getItem('userAccessToken'));
-                if (usernameData == null) {
-                    console.log('Anda Belum Daftar');
-                    window.location.href = '#/login'
-                    return
-                }
-                const { id } = usernameData;
+        data.initiality.buttonAnswerElement.addEventListener('click', async () => {
+            const dataFixUserCreate = data.initiality.answerElement;
+            const tokenUser = JSON.parse(localStorage.getItem('tokenAPI'));
+            const usernameData = JSON.parse(localStorage.getItem('userAccessToken'));
+            if (usernameData == null) {
+                console.log('Anda Belum Daftar');
+                window.location.href = '#/login'
+                return
+            }
+            const { id } = usernameData;
 
-                const datauser = await DataAPI.getUserById(id, tokenUser);
+            const datauser = await DataAPI.getUserById(id, tokenUser);
 
-                if (datauser.success === 'data di temukan') {
-                    const { firstName } = datauser.data;
-                    const userData = {
-                        name: firstName,
-                        description: dataFixUserCreate.value,
-                    };
-                    console.log(userData);
-                    const userFix = JSON.stringify(userData);
-                    const dataCreate = await DataAPI.createAnswer(userFix);
-                    if (dataCreate.status === 'success') {
-                        const spin = document.querySelector('#spinner');
-                        spin.removeAttribute('hidden');
-                        setTimeout(async () => {
-                            spin.setAttribute('hidden', '');
-                            getItem();
-                        }, 3000);
-                    } else {
-                        console.log('error');
-                        return;
-                    }
-                    // eslint-disable-next-line no-unused-vars
+            if (datauser.success === 'data di temukan') {
+                const { firstName } = datauser.data;
+                const userData = {
+                    name: firstName,
+                    description: dataFixUserCreate.value,
+                };
+                console.log(userData);
+                const userFix = JSON.stringify(userData);
+                const dataCreate = await DataAPI.createAnswer(userFix);
+                if (dataCreate.status === 'success') {
+                    const spin = document.querySelector('#spinner');
+                    spin.removeAttribute('hidden');
+                    setTimeout(async () => {
+                        spin.setAttribute('hidden', '');
+                        getItem();
+                    }, 3000);
                 } else {
-                    console.log('Kamu Belum Login');
-                    // eslint-disable-next-line no-useless-return
+                    console.log('error');
                     return;
                 }
-            });
+                // eslint-disable-next-line no-unused-vars
+            } else {
+                console.log('Kamu Belum Login');
+                // eslint-disable-next-line no-useless-return
+                return;
+            }
+        });
 
         const getAllAnswer = await DataAPI.getAnswer();
         const getAllCreate = () => {
@@ -96,13 +96,13 @@ const KomunitasLingkunganPage = {
                 </div>
                 `;
             });
-        } 
+        }
         const getItem = () => {
-            if (window.location.pathname === '/'){
+            if (window.location.pathname === '/') {
                 getAllCreate();
             }
         }
-      },
+    },
 };
 
 export default KomunitasLingkunganPage;

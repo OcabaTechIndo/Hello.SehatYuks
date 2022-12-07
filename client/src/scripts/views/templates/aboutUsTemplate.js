@@ -10,7 +10,7 @@ class AboutUs extends HTMLElement {
                 <div class="profil_card">
                     <div class="profil_head">
                         <figure>
-                            <img src="" alt="Foto Front End 1 Muhammad Ilham F">
+                            <img src="./foto profile/profile ilham.jpeg" alt="Foto Front End 1 Muhammad Ilham F">
                             <figcaption>Muhammad Ilham F</figcaption>
                         </figure>
                         <hr>
@@ -22,6 +22,8 @@ class AboutUs extends HTMLElement {
                         <p>Universitas Pertamina</p>
                         <p>Front End Developer</p>
                         <a href="https://github.com/Understrike123">GitHub</a>
+                        <a href="https://www.instagram.com/muhilhamfebr_/">Instagram</a>
+                        <a href="https://www.linkedin.com/in/muhammad-ilham-febriana-4234a21a4/">linkedin</a>
                     </div>
                 </div>
                 <div class="profil_card">

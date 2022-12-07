@@ -145,3 +145,26 @@
     padding: 0;
   }
 }
+@media screen and (max-width: 1000px) {
+.Grid{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 10;
+}
+
+.textView{
+  margin-top: 5px;
+}
+
+}
+
+@media screen and (min-width: 1001px) {
+.Grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.textView{
+  margin-top: 32px;
+}
+}

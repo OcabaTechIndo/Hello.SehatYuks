@@ -326,10 +326,6 @@ footer {
   height: 600px;
 }
 
-.text-start {
-  margin-top: 50px;
-}
-
 .button_login {
   margin-top: 70px;
 }
@@ -352,6 +348,13 @@ footer {
 .container-sm {
   width: 100%;
   margin: 0 auto;
+}
+
+.logo_login {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 
 .login_container {
@@ -521,22 +524,10 @@ footer {
 
 }
 
-.kiri {
-  float: left;
-  width: 40%;
-}
-
-.kiri img {
-  max-height: 360px;
+.detail-view img {
+  min-height: 400px;
+  max-height: 450px;
   border-radius: 5px;
-}
-
-.kanan {
-  float: right;
-  width: 60%;
-  padding-left: 50px;
-  text-align: justify;
-  padding-top: 33.5px;
 }
 
 
@@ -544,6 +535,10 @@ footer {
   padding-bottom: 15px;
   font-weight: bold;
   text-align: center;
+}
+
+.deskripsiView{
+  text-align: justify;
 }
 
 

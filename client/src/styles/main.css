@@ -326,10 +326,6 @@ footer {
   height: 600px;
 }
 
-.text-start {
-  margin-top: 50px;
-}
-
 .button_login {
   margin-top: 70px;
 }
@@ -352,6 +348,13 @@ footer {
 .container-sm {
   width: 100%;
   margin: 0 auto;
+}
+
+.logo_login {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 
 .login_container {

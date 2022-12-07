@@ -1,3 +1,9 @@
+@media screen and (max-width: 376px) {
+  .container .row {
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (min-width: 376px) {
   .image_login_content {
     width: 400px;

@@ -311,7 +311,7 @@ main {
 /*footer*/
 footer {
   padding: 25px;
-  background-color: #1392E9;
+  border-top: solid black 1px;
   text-align: center;
   width: 100%;
   margin: 0px;

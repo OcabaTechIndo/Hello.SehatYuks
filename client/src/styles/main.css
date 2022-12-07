@@ -524,22 +524,10 @@ footer {
 
 }
 
-.kiri {
-  float: left;
-  width: 40%;
-}
-
-.kiri img {
-  max-height: 360px;
+.detail-view img {
+  min-height: 400px;
+  max-height: 450px;
   border-radius: 5px;
-}
-
-.kanan {
-  float: right;
-  width: 60%;
-  padding-left: 50px;
-  text-align: justify;
-  padding-top: 33.5px;
 }
 
 
@@ -547,6 +535,10 @@ footer {
   padding-bottom: 15px;
   font-weight: bold;
   text-align: center;
+}
+
+.deskripsiView{
+  text-align: justify;
 }
 
 

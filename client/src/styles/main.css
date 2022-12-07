@@ -420,12 +420,13 @@ footer {
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 5px 10px;
-  width: 270px;
+  width: 300px;
   margin: auto auto;
 }
 
 .profil_head img {
   width: 100%;
+  border-radius: 5px;
   height: 300px;
 }
 
@@ -436,7 +437,7 @@ footer {
 
 .profil_body {
   font-size: 13.5px;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 .profil_body a {

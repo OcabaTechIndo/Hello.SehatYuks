@@ -2,6 +2,19 @@
   .image_login_content {
     width: 400px;
   }
+
+  .profil_card {
+    width: 350px;
+  }
+
+  .profil_head img {
+    height: 380px;
+  }
+
+  .profil_body {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
 }
 
 @media screen and (min-width: 426px) {
@@ -123,25 +136,33 @@
   }
 }
 
-@media screen and (max-width: 580px){
-  .nav-point{
+@media screen and (max-width: 580px) {
+  .nav-point {
     margin: 0 auto;
-   }
+  }
 }
-@media screen and (min-width: 540px){
-  .nav-point{
+
+@media screen and (min-width: 540px) {
+  .nav-point {
     margin-left: 30px;
-   }
+  }
 
 }
 
 @media screen and (max-width: 1000px) {
-  .kiri{
+  .kiri {
     width: 100%;
     padding: 0;
   }
-  .kanan{
+
+  .kanan {
     width: 100%;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profil_container {
+    display: flex;
   }
 }

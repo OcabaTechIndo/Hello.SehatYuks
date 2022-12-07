@@ -104,8 +104,18 @@ class DataAPI {
         return response.json();
     }
 
+    static async getLingkunganById(id) {
+        const response = await fetch(`${API_ENDPOINT.GET_LINGKUNGAN_BY_ID(id)}`);
+        return response.json();
+    }
+
     static async getFoodHealth() {
         const response = await fetch(`${API_ENDPOINT.GET_FOOD}`);
+        return response.json();
+    }
+
+    static async getFoodHealthById(id) {
+        const response = await fetch(`${API_ENDPOINT.GET_FOOD_BY_ID(id)}`);
         return response.json();
     }
 }

@@ -26,7 +26,7 @@ const DbLingkungan = require('../controlers/lingkunganContoler')
         },
 
         getIdLingkungan: (request, response) => {
-            const { id } = request;
+            const { id } = request.params;
             const dataBase = DbLingkungan.getInstaceLingkungan();
             const result = dataBase.getLingkunganById(id);
 

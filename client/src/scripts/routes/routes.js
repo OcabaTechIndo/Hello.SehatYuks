@@ -13,6 +13,8 @@ import RegisterPage from '../views/pages/register_page';
 import detailArtikel from '../views/pages/detail_artikel_page';
 import FoodHealthPage from '../views/pages/food_health._page';
 import aboutUsPage from '../views/pages/aboutus_page';
+import detailFoodPage from '../views/pages/detail_food_health';
+import detailLingkunganPage from '../views/pages/detail_lingkungan_page';
 
 const routes = {
     '/': HomePage,
@@ -31,6 +33,8 @@ const routes = {
     '/register_page': RegisterPage,
     '/detail_artikel/:id': detailArtikel,
     '/food_page': FoodHealthPage,
+    '/detail_food_page/:id': detailFoodPage,
+    '/detail_lingkungan/:id': detailLingkunganPage,
 };
 
 export default routes;

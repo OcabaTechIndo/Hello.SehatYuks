@@ -20,18 +20,18 @@ const FoodHealthPage = {
         const dataFood = await DataAPI.getFoodHealth();
         dataFood.food.forEach((fod) => {
             innerFood.innerHTML += `
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="${fod.image}" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">${fod.title}</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">${fod.brief_description}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+
+            <div class="card text-left col-" id="containerCar" style="width: 18rem;">
+            <div class="text-center divGambarArtikel">
+                <img src="${fod.image}" class="img-fluid gambarObat" alt="...">
             </div>
+            <div class="card-body">
+                <h5 class="card-title">${fod.title} </h5>
+            </div>
+            <a href="#/detail_food_page/${fod.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
+        </div>
+        </div>
+    </div>
             `;
         });
       },

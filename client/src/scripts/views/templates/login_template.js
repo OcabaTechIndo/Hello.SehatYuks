@@ -49,12 +49,12 @@ class LoginUser extends HTMLElement {
                                     <div class="col">
                                         <button id="btn-submit-login" class="btn btn-validation">Masuk</button>
                                     </div>
+                            </form>
                                     <div class="col">
                                         <a href="#/register_page" class="btn btn-validation">Daftar</a>
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>

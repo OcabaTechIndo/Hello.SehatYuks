@@ -9,7 +9,7 @@ class RegistUserTemplate extends HTMLElement {
             firstName: this.querySelector('#first_name'),
             lastName: this.querySelector('#last_name'),
             email: this.querySelector('#email'),
-            password: this.querySelector('#email'),
+            password: this.querySelector('#password'),
             form: this.querySelector('form'),
             gender: this.querySelector('#gender'),
             phone: this.querySelector('#phone'),

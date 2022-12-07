@@ -75,13 +75,13 @@ const userLogin = {
                 localStorage.setItem('tokenAPI', JSON.stringify(API));
 
                 const spin = document.querySelector('#spinner');
-                    spin.removeAttribute('hidden');
-                    setTimeout(() => {
-                        spin.setAttribute('hidden', '');
-                        window.location.href = '#/home';
-                        const elementNav = document.querySelector('.btn-loginValidation');
-                        elementNav.setAttribute('hidden', '');
-                    }, 3000);
+                spin.removeAttribute('hidden');
+                setTimeout(() => {
+                    spin.setAttribute('hidden', '');
+                    window.location.href = '#/home';
+                    const elementNav = document.querySelector('.btn-loginValidation');
+                    elementNav.setAttribute('hidden', '');
+                }, 3000);
             }
         };
     },

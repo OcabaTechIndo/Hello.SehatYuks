@@ -21,9 +21,11 @@ class AboutUs extends HTMLElement {
                         <p>Depok, Jawa Barat</p>
                         <p>Universitas Pertamina</p>
                         <p>Front End Developer</p>
-                        <a href="https://github.com/Understrike123">GitHub</a>
-                        <a href="https://www.instagram.com/muhilhamfebr_/">Instagram</a>
-                        <a href="https://www.linkedin.com/in/muhammad-ilham-febriana-4234a21a4/">linkedin</a>
+                        <div class="link_profile">
+                            <a href="https://github.com/Understrike123">GitHub</a>
+                            <a href="https://www.instagram.com/muhilhamfebr_/">Instagram</a>
+                            <a href="https://www.linkedin.com/in/muhammad-ilham-febriana-4234a21a4/">linkedin</a>
+                        </div>
                     </div>
                 </div>
                 <div class="profil_card">

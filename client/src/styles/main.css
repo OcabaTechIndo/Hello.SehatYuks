@@ -413,12 +413,6 @@ footer {
 }
 
 /*profil about us*/
-.profil_container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
 .profil_card {
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -445,9 +439,14 @@ footer {
 
 .profil_body a {
   text-decoration: none;
-  margin-left: 10px;
+  margin: auto 0;
   font-weight: 600;
   color: #165a72;
+}
+
+.link_profile {
+  width: fit-content;
+  margin: 5px auto;
 }
 
 /*spin*/
@@ -537,7 +536,7 @@ footer {
   text-align: center;
 }
 
-.deskripsiView{
+.deskripsiView {
   text-align: justify;
 }
 

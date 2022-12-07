@@ -156,25 +156,54 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .Grid{
+  .Grid {
     display: grid;
     grid-template-rows: 1fr 2fr;
     gap: 10;
   }
-  
-  .textView{
+
+  .textView {
     margin-top: 5px;
   }
-  
-  }
-  
-  @media screen and (min-width: 1001px) {
-  .Grid{
+
+}
+
+@media screen and (min-width: 1001px) {
+  .Grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .textView{
+
+  .textView {
     margin-top: 32px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .profil_container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
+}
+
+@media screen and (min-width: 769px) {
+  .profil_container {
+    display: flex;
+  }
+
+  .profil_head img {
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .profil_head img {
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+  }
+}

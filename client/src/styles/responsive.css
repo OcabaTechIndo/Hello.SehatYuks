@@ -206,4 +206,17 @@
     border-radius: 5px;
     height: 300px;
   }
+
+  .profil_body {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .profil_head img {
+    width: 100%;
+    border-radius: 5px;
+    height: 370px;
+  }
 }

@@ -411,10 +411,9 @@ footer {
 
 /*profil about us*/
 .profil_container {
-  margin: auto auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 .profil_card {
@@ -422,6 +421,17 @@ footer {
   border-radius: 10px;
   padding: 5px 10px;
   width: 270px;
+  margin: auto auto;
+}
+
+.profil_head img {
+  width: 100%;
+  height: 300px;
+}
+
+.profil_head figcaption {
+  font-size: small;
+  text-align: center;
 }
 
 .profil_body {

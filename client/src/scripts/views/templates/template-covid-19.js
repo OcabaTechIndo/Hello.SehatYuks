@@ -21,13 +21,15 @@ class covid19 extends HTMLElement {
         infoCovid19.innerHTML = '';
         this._covidData.forEach((covid) => {
             infoCovid19.innerHTML += `
-            <div class="card col-" id="covidCar" style="width: 18rem;">
-            <img src="${covid.image}" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h3>${covid.title}</h3>
-                </div>
-                <a href="#/detail_covid/${covid.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
+            <div class="card text-left col-" id="containerCar" style="width: 18rem;">
+            <div class="text-center divGambarCovid">
+                <img src="${covid.image}" class="img-fluid gambarCovid" alt="">
             </div>
+            <div class="card-body">
+                <h5 class="card-title text-center"><b>${covid.title}</b></h5>
+            </div>
+            <a href="#/detail_covid/${covid.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
+        </div>
             `;
         });
     }

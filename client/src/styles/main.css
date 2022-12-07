@@ -486,7 +486,19 @@ footer {
   border-radius: 2px;
 }
 
+/*Gambar covid car*/
+.divGambarCovid {
+  margin-top: 10px;
+  width: 100%;
+}
 
+.divGambarCovid img {
+  min-height: 170px;
+  max-height: 177px;
+  min-width: 200px;
+  max-width: 250px;
+  border-radius: 2px;
+}
 
 
 

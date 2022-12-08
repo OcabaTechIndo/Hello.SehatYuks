@@ -154,7 +154,7 @@
   }
 
 }
-
+/* detail all contents*/
 @media screen and (max-width: 1000px) {
   .Grid {
     display: grid;
@@ -179,6 +179,25 @@
     margin-top: 32px;
   }
 }
+
+/*login*/
+@media screen and (max-width: 1000px) {
+  .Grid-login {
+    grid-template-rows: 1fr 1fr;
+    gap: 10;
+  }
+}
+
+
+
+@media screen and (min-width: 1001px) {
+  .Grid-login {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/*  apa nioh */
 
 @media screen and (max-width: 768px) {
   .profil_container {

@@ -25,8 +25,8 @@ const detailArtikel = {
         const artikel = await DataAPI.getArtikelById(url.id);
         const dataFix = artikel.Article[0];
         console.log(dataFix);
-        const tampilkanDetailObat = document.querySelector('#detailArtikel');
-        tampilkanDetailObat.innerHTML = templateDetailArtikel(dataFix);
+        const tampilkanDetailArtikel = document.querySelector('#detailArtikel');
+        tampilkanDetailArtikel.innerHTML = templateDetailArtikel(dataFix);
       },
 };
 

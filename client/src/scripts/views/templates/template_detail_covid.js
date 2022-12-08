@@ -9,7 +9,7 @@ class DetailCovid extends HTMLElement {
 <div class="Grid">
     <div class="detail-view ">
     <h5 class="card-title titlePage">${this._detailCovid.title}</h5>
-        <img src="${this._detailCovid.image}" class="card-img-top" alt="Gamabar Obat ${this._detailCovid.title}">        </div>
+        <img src="${this._detailCovid.image}" class="card-img-top" alt="Gamabar Covid type ${this._detailCovid.title}">        </div>
     <div class="">
         <div class="detail-view deskripsiView">
                 <p class="card-text textView">${this._detailCovid.description}</p>

@@ -18,13 +18,17 @@ const LingkunganPage = {
         areaList.innerHTML = '';
         dataEnvirontment.Lingkungan.forEach((envi) => {
           areaList.innerHTML += `
-            <div class="card col-" id="lingkunganCar" style="width: 18rem;">
-            <img src="${envi.image}" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h4>${envi.title}</h4>
-                </div>
-                <a href="#/detail_lingkungan/${envi.id}" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
-            </div>
+          <div class="card text-left col-" id="containerCar" style="width: 18rem;">
+          <div class="text-center divGambarArtikel">
+              <img src="${envi.image}" class="img-fluid gambarLingkungan" alt="Gambar Lingkungan ${envi.image}">
+          </div>
+          <div class="card-body">
+              <h5 class="card-title">${envi.title} </h5>
+          </div>
+          <a href="#/detail_lingkungan/${envi.id}" id="tombolBaca" class="btn btn-primary">Baca Info Lengkap</a>
+      </div>
+      </div>
+  </div>
             `;
         });
       },

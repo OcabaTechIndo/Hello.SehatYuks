@@ -342,6 +342,10 @@ footer {
 .btn-validation {
   background-color: #92E3A9;
 }
+.form-group .btn{
+  background-color: #92E3A9;
+  border: none;
+}
 
 
 /*Login Validation*/
@@ -541,6 +545,21 @@ footer {
 }
 
 
+/*login*/
+.Grid-login{
+  display: grid;
+}
+
+.baners{
+  text-align: center;
+}
+
+.baners img{
+  width: 100%;
+  height: 100%;
+}
+
+.loginForm{}
 
 
 

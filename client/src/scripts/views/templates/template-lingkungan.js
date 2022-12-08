@@ -24,32 +24,6 @@ class Lingkungan extends HTMLElement {
         <div class="container row" id="areaLingkungan"></div>
         </div>
         `;
-
-        // const infoLingkungan = this.querySelector('#areaLingkungan');
-
-        // JANGAN DI HAPUS
-
-     /*   infoLingkungan.innerHTML = '';
-        this._lingkunganData.forEach((lingkungan) => {
-            infoLingkungan.innerHTML += `
-            <div class="card col-" id="obatCar" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">${lingkungan.background.slice(0, 20)}</h5>
-                    <p class="card-text">${lingkungan.brand_name.slice(0, 10)}</p>
-                    <p class="card-text">${lingkungan.id}</p>
-                    <p class="card-text">${lingkungan.indicator.slice(0, 20)}</p>
-                    <p class="card-text">${lingkungan.name_general}</p>
-                    <p class="card-text">${lingkungan.numberdrugaccess}</p>
-                    <p class="card-text">${lingkungan.summary.slice(0, 20)}</p>
-                </div>
-                // eslint-disable-next-line max-len, max-len
-                <a href="#/detaillingkunganPage" id="bacalingkungan" class="btn btn-primary">Baca Info Lengkap</a>
-            </div>
-            `;
-            */
-
-            // ini hanya trmplate nanti yang di atas tinggal ganti parameter API
     }
 }
 

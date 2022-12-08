@@ -28,7 +28,7 @@ const ArtikelPage = {
         elemAr.innerHTML += `
             <div class="card text-left col-" id="containerCar" style="width: 18rem;">
             <div class="text-center divGambarArtikel">
-                <img src="${ar.image}" class="img-fluid gambarObat" alt="...">
+                <img src="${ar.image}" class="img-fluid gambarArtikel" alt="...">
             </div>
             <div class="card-body">
                 <h5 class="card-title">${ar.title} </h5>

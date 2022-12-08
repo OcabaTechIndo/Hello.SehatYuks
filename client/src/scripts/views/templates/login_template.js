@@ -16,48 +16,51 @@ class LoginUser extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <div class="container-sm">
-                <nav class="ml-5" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#/home">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Login User</li>
-                    </ol>
-                </nav>
-                <div class="login_container">
-                    <div hidden id="spinner"></div>
-                    <div class="alert alert-danger alert-user alert-validation-danger fs-6" role="alert" hidden>
-                        Invalid email or password !
-                        Email atau Password Kamu salah 
-                    </div> 
-                    <div class="alert alert-danger alert-user alert-validation-danger-value" role="alert" hidden>
-                    kamu belum memasukan pssword dan email
-                    </div>
-                    <div class="container text-center user-valid ">
-                        <div class="row justify-content-center">  
-                            <form class=" needs-validation validation-user p-5 mt-5">
-                                <img class="logo_login" src="./logo/IRIS.webp" alt="logo IRIS">
-                                <div class="mb-3 text-start">
-                                    <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                </div>
-                                <div class="mb-3 text-start">
-                                    <label for="email" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="*********" required>
-                                </div>
-                                <div class="container">
-                                <div class="row button_login">
-                                    <div class="col">
-                                        <button id="btn-submit-login" class="btn btn-validation">Masuk</button>
-                                    </div>
-                            </form>
-                                    <div class="col">
-                                        <a href="#/register_page" class="btn btn-validation">Daftar</a>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
+        <nav class="petunjukHalaman" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Login User</li>
+        </ol>
+        </nav>
+        <div class="login_container">
+        <div hidden id="spinner"></div>
+        <div class="alert alert-danger alert-user alert-validation-danger fs-6" role="alert" hidden>
+            Invalid email or password !
+            Email atau Password Kamu salah 
+        </div> 
+        <div class="alert alert-danger alert-user alert-validation-danger-value" role="alert" hidden>
+        kamu belum memasukan pssword dan email
+        </div>
+        <div class="container text-center user-valid ">
+    <div class="Grid-login justify-content-center">
+        <div class="baners">
+            <img class="logo_login" src="./logo/hero2.webp" alt="logo IRIS">
+        </div> 
+        <div class="loginForm"> 
+        <form class=" needs-validation validation-user p-5 mt-5">
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="email" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="*********" required>
+            </div>
+            <div class="container">
+            <div class="row button_login">
+                <div class="col">
+                    <button id="btn-submit-login" class="btn btn-validation">Masuk</button>
+                </div>
+        </form>
+                <div class="col">
+                    <a href="#/register_page" class="btn btn-validation">Daftar</a>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
         `;
     }
 }

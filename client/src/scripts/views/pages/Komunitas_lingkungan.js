@@ -1,108 +1,86 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-useless-return */
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable prefer-arrow-callback */
-/* eslint-disable semi */
-/* eslint-disable no-use-before-define */
-/* eslint-disable space-before-blocks */
-// import DataAPI from '../../data/dataAPI';
-// eslint-disable-next-line import/extensions
-// import DataAPI from '../../data/dataAPI';
+/* eslint-disable max-len */
+// /* eslint-disable no-unused-vars */
+// /* eslint-disable no-useless-return */
+// /* eslint-disable no-trailing-spaces */
+// /* eslint-disable prefer-arrow-callback */
+// /* eslint-disable semi */
+// /* eslint-disable no-use-before-define */
+// /* eslint-disable space-before-blocks */
+// // import DataAPI from '../../data/dataAPI';
+// // eslint-disable-next-line import/extensions
 import DataAPI from '../../data/dataAPI';
 import '../templates/page_komunitas_lingkungan';
 
-/* eslint-disable no-empty-function */
+// /* eslint-disable no-empty-function */
 const KomunitasLingkunganPage = {
     async render() {
         return `
-        <div class="nav-point">
-        <nav class="ml-5" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#/home">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Komunitas</li>
-            </ol>
+        <nav class="petunjukHalaman" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Komunitas Lingkungan</li>
+        </ol>
         </nav>
-        </div>
                 <komunitas-lingkungan-element>
                 </komunitas-lingkungan-element>
             `;
-      },
+    },
 
-      async afterRender() {
+    async afterRender() {
         const elementGetValue = document.querySelector('komunitas-lingkungan-element');
         const elementFixValueValid = elementGetValue.dataValueAnswer;
-        const { answerElement, buttonAnswerElement, containerElement } = elementFixValueValid;
+        const { answerElement, buttonAnswerElement } = elementFixValueValid;
         const data = {
             initiality: {
                 answerElement,
                 buttonAnswerElement,
             },
         };
-            data.initiality.buttonAnswerElement.addEventListener('click', async () => {
-                const dataFixUserCreate = data.initiality.answerElement;
-                const tokenUser = JSON.parse(localStorage.getItem('tokenAPI'));
-                const usernameData = JSON.parse(localStorage.getItem('userAccessToken'));
-                if (usernameData == null) {
-                    console.log('Anda Belum Daftar');
-                    window.location.href = '#/login'
-                    return
-                }
-                const { id } = usernameData;
+        data.initiality.buttonAnswerElement.addEventListener('click', async () => {
+            const dataFixUserCreate = data.initiality.answerElement;
+            const tokenUser = JSON.parse(localStorage.getItem('tokenAPI'));
+            const usernameData = JSON.parse(localStorage.getItem('userAccessToken'));
+            if (usernameData == null) {
+                console.log('Anda Belum Daftar');
+                window.location.href = '#/login';
+                return;
+            }
+            const { id } = usernameData;
 
-                const datauser = await DataAPI.getUserById(id, tokenUser);
+            const datauser = await DataAPI.getUserById(id, tokenUser);
 
-                if (datauser.success === 'data di temukan') {
-                    const { firstName } = datauser.data;
-                    const userData = {
-                        name: firstName,
-                        description: dataFixUserCreate.value,
-                    };
-                    console.log(userData);
-                    const userFix = JSON.stringify(userData);
-                    const dataCreate = await DataAPI.createAnswer(userFix);
-                    if (dataCreate.status === 'success') {
-                        const spin = document.querySelector('#spinner');
-                        spin.removeAttribute('hidden');
-                        setTimeout(async () => {
-                            spin.setAttribute('hidden', '');
-                            getItem();
-                        }, 3000);
-                    } else {
-                        console.log('error');
-                        return;
-                    }
-                    // eslint-disable-next-line no-unused-vars
+            if (datauser.success === 'data di temukan') {
+                const { firstName } = datauser.data;
+                const userData = {
+                    name: firstName,
+                    description: dataFixUserCreate.value,
+                };
+                console.log(userData);
+                const userFix = JSON.stringify(userData);
+                const dataCreate = await DataAPI.createAnswer(userFix);
+                if (dataCreate.status === 'success') {
+                    const spin = document.querySelector('#spinner');
+                    spin.removeAttribute('hidden');
+                    setTimeout(async () => {
+                        spin.setAttribute('hidden', '');
+                        window.location.href = '#/answer_view';
+                    }, 3000);
                 } else {
-                    console.log('Kamu Belum Login');
-                    // eslint-disable-next-line no-useless-return
+                    console.log('error');
                     return;
                 }
-            });
-
-        const getAllAnswer = await DataAPI.getAnswer();
-        const getAllCreate = () => {
-            getAllAnswer.answer.forEach((answ) => {
-                containerElement.innerHTML += `
-                <div class="card mt-5">
-                <div class="card-header">
-                    ${answ.name}
-                </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>${answ.description}</p>
-                            <span class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></span>
-                        </blockquote>
-                    </div>
-                </div>
-                `;
-            });
-        } 
-        const getItem = () => {
-            if (window.location.pathname === '/'){
-                getAllCreate();
+                // eslint-disable-next-line no-unused-vars
+            } else {
+                const spin = document.querySelector('#spinner');
+                spin.removeAttribute('hidden');
+                setTimeout(async () => {
+                    spin.setAttribute('hidden', '');
+                    window.location.href = '#/login';
+                }, 3000);
+                return;
             }
-        }
-      },
+        });
+    },
 };
 
 export default KomunitasLingkunganPage;

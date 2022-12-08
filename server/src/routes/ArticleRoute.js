@@ -23,5 +23,15 @@ const DbArticle = require('../controlers/articleControler')
             result
             .then(data => response.json({Article: data}))
             .catch( err => console.log(err.message))
+        },
+
+        getByIdArticle: (request, response) => {
+            const { id } = request.params;
+            const dataBase = DbArticle.getInstaceArticle();
+            const result = dataBase.getArticleById(id);
+        
+            result
+            .then(data => response.json({Article: data}))
+            .catch( err => console.log(err.message))
         }
     } 

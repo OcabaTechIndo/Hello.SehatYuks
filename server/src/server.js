@@ -13,6 +13,7 @@ require('./endpoint/article.router')(app)
 require('./endpoint/answer.route')(app)
 require('./endpoint/lingkungan.routes')(app)
 require('./endpoint/covid.routes')(app)
+require('./endpoint/food.router')(app)
 
 app.listen(process.env.PORT, () => {
     console.log(`server running`)

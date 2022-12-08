@@ -6,7 +6,7 @@ const DbArticle = require('../controlers/articleControler')
             } = request.body; 
         
             const ArticleData = {
-                title, description
+                title, image, description
             }
             const dataBase = DbArticle.getInstaceArticle();
             const result = dataBase.insertArticleData(ArticleData);

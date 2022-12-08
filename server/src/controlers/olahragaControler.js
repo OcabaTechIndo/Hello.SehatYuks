@@ -1,16 +1,16 @@
 let instance = null;
 const connection = require('../dbService/dataBaseDrug')
 
-class DbArticle {
-    static getInstaceArticle () {
-        return instance ? instance : new DbArticle();
+class DbOlahraga {
+    static getInstaceOlahraga () {
+        return instance ? instance : new DbOlahraga();
     }
 
-    async insertArticleData(ArticleData) {
+    async insertOlahragaData(OlahragaData) {
         try {
-            const { title, image, description } = ArticleData;
+            const { title, image, description } = OlahragaData;
             const response = await new Promise((resolve, reject) => {
-                const query = "INSERT INTO article_table (title, image, description) VALUES (?,?,?);";
+                const query = "INSERT INTO olahraga_table (title, image, description) VALUES (?,?,?);";
 
                 connection.query(query, [title, image, description] , (err, result) => {
                     if (err) reject(new Error(err.message));
@@ -23,10 +23,10 @@ class DbArticle {
         }
     }
 
-    async getAllArticle() {
+    async getAllOlahraga() {
         try{
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM article_table";
+                const query = "SELECT id,title FROM olahraga_table";
 
                 connection.query(query, (err, results) => {
                     if (err) reject(new Error(err.message));
@@ -39,11 +39,11 @@ class DbArticle {
         }
     }
 
-    async getArticleById(id) {
+    async getOlahragaById(id) {
         try{
             
             const response = await new Promise((resolve, reject) => {
-                const query = "SELECT * FROM article_table WHERE id = ?";
+                const query = "SELECT * FROM olahraga_table WHERE id = ?";
 
                 connection.query(query,[id],(err, results) => {
                     if (err) reject(new Error(err.message));
@@ -57,4 +57,4 @@ class DbArticle {
     }
 }
 
-module.exports = DbArticle;
+module.exports = DbOlahraga;

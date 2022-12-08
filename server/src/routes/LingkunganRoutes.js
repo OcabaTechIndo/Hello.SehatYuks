@@ -8,7 +8,7 @@ const DbLingkungan = require('../controlers/lingkunganContoler')
             const LingkunganData = {
                 title, image, description
             }
-            const dataBase = DbArticle.getInstaceLingkungan();
+            const dataBase = DbLingkungan.getInstaceLingkungan();
             const result = dataBase.insertLingkunganData(LingkunganData);
         
             result

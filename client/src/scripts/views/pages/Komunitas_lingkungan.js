@@ -21,6 +21,14 @@ const KomunitasLingkunganPage = {
         <li class="breadcrumb-item active" aria-current="page">Komunitas Lingkungan</li>
         </ol>
         </nav>
+        <div class="alert alert-danger alert-user alert-validation-danger fs-6" role="alert" hidden>
+        Invalid email or password !
+        Email atau Password Kamu salah 
+    </div> 
+    <div class="alert alert-danger alert-user alert-validation-danger-value" role="alert" hidden>
+    kamu belum memasukan pssword dan email
+    </div>
+    <div class="container text-center user-valid ">
                 <komunitas-lingkungan-element>
                 </komunitas-lingkungan-element>
             `;
@@ -29,6 +37,7 @@ const KomunitasLingkunganPage = {
     async afterRender() {
         const elementGetValue = document.querySelector('komunitas-lingkungan-element');
         const elementFixValueValid = elementGetValue.dataValueAnswer;
+
         const { answerElement, buttonAnswerElement } = elementFixValueValid;
         const data = {
             initiality: {
@@ -55,7 +64,10 @@ const KomunitasLingkunganPage = {
                     name: firstName,
                     description: dataFixUserCreate.value,
                 };
-                console.log(userData);
+
+                if (userData.description == '') {
+                    return;
+                }
                 const userFix = JSON.stringify(userData);
                 const dataCreate = await DataAPI.createAnswer(userFix);
                 if (dataCreate.status === 'success') {

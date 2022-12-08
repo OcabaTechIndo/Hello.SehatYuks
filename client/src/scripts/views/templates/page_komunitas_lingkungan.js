@@ -27,7 +27,7 @@ class LingkunganTemplate extends HTMLElement {
                     <label for="answer" class="form-label">Masukan Serta Categori Pertanyaan</label>
                     <textarea class="form-control" id="answer" placeholder="Masukkan Pertanyaan" required rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-info" id="buttonElementAnswer">Info</button>
+                <button type="submit" class="btn btn-outline-info" id="buttonElementAnswer"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
         </div>

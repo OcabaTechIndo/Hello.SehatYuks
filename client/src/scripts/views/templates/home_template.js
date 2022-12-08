@@ -14,12 +14,14 @@ class Home extends HTMLElement {
         return {
             elementCarousel: this.getElementsByTagName('span'),
             elementSliding: this.getElementsByClassName('card-product-obat'),
+            spinnerElement: this.querySelector('#spinner'),
         };
     }
 
     render() {
         this.innerHTML = `
         <div class="jumbotron">
+        <div hidden id="spinner"></div>
             <h1 class="display-4">SEHAT YUKS</h1>
             <p class="lead">Selain diri kamu, IRIS juga perduli kesehatan kamu lho,
                 Yuks cari tahu Info kesehatan disini</p>
@@ -28,7 +30,6 @@ class Home extends HTMLElement {
             <a href="#" class="btn btn-primary btn-lg">Join Now</a>
         </div>
         <div class="container-home">
-
                 <header>
                     <h1>Layanan Tersedia</h1>
                     <p>

@@ -347,6 +347,11 @@ footer {
   border: none;
 }
 
+.sliderButton{
+  background-color: #92E3A9;
+  border: none;
+  color: black;
+}
 
 /*Login Validation*/
 .container-sm {

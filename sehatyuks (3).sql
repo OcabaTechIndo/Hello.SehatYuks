@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Des 2022 pada 21.48
--- Versi server: 10.4.27-MariaDB
--- Versi PHP: 8.1.12
+-- Generation Time: Dec 08, 2022 at 03:44 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `answer_table`
+-- Table structure for table `answer_table`
 --
 
 CREATE TABLE `answer_table` (
@@ -34,7 +34,7 @@ CREATE TABLE `answer_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `answer_table`
+-- Dumping data for table `answer_table`
 --
 
 INSERT INTO `answer_table` (`id`, `name`, `description`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `answer_table` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `article_table`
+-- Table structure for table `article_table`
 --
 
 CREATE TABLE `article_table` (
@@ -55,7 +55,7 @@ CREATE TABLE `article_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `article_table`
+-- Dumping data for table `article_table`
 --
 
 INSERT INTO `article_table` (`id`, `title`, `image`, `description`) VALUES
@@ -67,7 +67,7 @@ INSERT INTO `article_table` (`id`, `title`, `image`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `covid_table`
+-- Table structure for table `covid_table`
 --
 
 CREATE TABLE `covid_table` (
@@ -78,7 +78,7 @@ CREATE TABLE `covid_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `covid_table`
+-- Dumping data for table `covid_table`
 --
 
 INSERT INTO `covid_table` (`id`, `title`, `image`, `description`) VALUES
@@ -91,7 +91,7 @@ INSERT INTO `covid_table` (`id`, `title`, `image`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `drug_table`
+-- Table structure for table `drug_table`
 --
 
 CREATE TABLE `drug_table` (
@@ -105,7 +105,7 @@ CREATE TABLE `drug_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `drug_table`
+-- Dumping data for table `drug_table`
 --
 
 INSERT INTO `drug_table` (`id`, `summary`, `name_general`, `image_drug`, `indication`, `brand_name`, `background`) VALUES
@@ -119,7 +119,7 @@ INSERT INTO `drug_table` (`id`, `summary`, `name_general`, `image_drug`, `indica
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `food_table`
+-- Table structure for table `food_table`
 --
 
 CREATE TABLE `food_table` (
@@ -131,7 +131,7 @@ CREATE TABLE `food_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `food_table`
+-- Dumping data for table `food_table`
 --
 
 INSERT INTO `food_table` (`id`, `title`, `brief_description`, `image`, `description`) VALUES
@@ -153,7 +153,7 @@ INSERT INTO `food_table` (`id`, `title`, `brief_description`, `image`, `descript
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `lingkungan_table`
+-- Table structure for table `lingkungan_table`
 --
 
 CREATE TABLE `lingkungan_table` (
@@ -164,7 +164,7 @@ CREATE TABLE `lingkungan_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `lingkungan_table`
+-- Dumping data for table `lingkungan_table`
 --
 
 INSERT INTO `lingkungan_table` (`id`, `title`, `image`, `description`) VALUES
@@ -177,7 +177,30 @@ INSERT INTO `lingkungan_table` (`id`, `title`, `image`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_sehatyuks`
+-- Table structure for table `olahraga_table`
+--
+
+CREATE TABLE `olahraga_table` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `image` text NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `olahraga_table`
+--
+
+INSERT INTO `olahraga_table` (`id`, `title`, `image`, `description`) VALUES
+(2, 'Manfaat jalan kaki setiap hari', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iugk2POn0K0x4XXvsXAhYYwVp7XaQzKbdg&usqp=CAU', 'Jalan kaki adalah kegiatan yang mudah dilakukan setiap hari. Meskipun terlihat sederhana, ternyata jalan kaki menjadi salah satu olahraga kardio yang bisa dilakukan kapan dan dimana saja. Olahraga ini juga terbilang murah karena tidak membutuhkan peralatan apapun dalam melakukannya.\r\n\r\nOlahraga ini bisa menjadi salah satu pilihan bagi kamu yang ingin memulai hidup sehat. Olahraga ini terbilang ringan, sehingga bisa dilakukan oleh siapa saja. Nah, sebelum memulai olahraga jalan kaki, sebaiknya kenali dulu berbagai manfaat jalan kaki dalam artikel ini!\r\n\r\nManfaat Jalan Kaki Setiap Hari\r\n\r\nAda berbagai pilihan yang bisa kamu lakukan untuk memulai olahraga dengan berbagai jenis olahraga ringan, salah satunya dengan jalan kaki. Olahraga ini tidak membutuhkan banyak peralatan khusus, yang diperlukan hanya pakaian dan sepatu yang nyaman untuk digunakan berjalan kaki.\r\n\r\nKamu bisa berjalan kaki selama 30 menit per harinya untuk meningkatkan kondisi kesehatan. Bukan hanya kesehatan fisik, jalan kaki pun bermanfaat bagi kesehatan mental. Yuk, simak berbagai manfaat lain dari jalan kaki bagi kesehatan fisik maupun mental.\r\n\r\nMemperkuat Fisik Tubuh\r\nRutin berjalan kaki setiap hari bisa memperkuat fisik tubuh. Olahraga ini bisa meningkatkan kekuatan otot paha, betis, hingga seluruh bagian kaki. Kamu bisa mencoba berjalan pada area yang menanjak dan menurun. Selain itu, jika kamu menemukan area yang memiliki anak tangga, sebaiknya gunakan anak tangga agar kekuatan bagian kaki semakin optimal.\r\n\r\nMenghindari Penyakit Kronis\r\nAmerican Diabetes Association mengatakan dengan rutin berjalan kaki dapat menurunkan kadar gula darah dan menghindari risiko diabetes. Hasil penelitian dalam American College of Cardiology mengatakan 1000 langkah yang dilakukan setiap hari dapat menurunkan tekanan darah sistolik.\r\n\r\nPenelitian yang ditulis dalam The New England Journal of Medicine, jalan kaki juga mampu menurunkan risiko penyakit kardiovaskular sebanyak 30 persen. Penelitian ini dilakukan pada orang yang rutin berjalan kaki dan tidak.\r\n\r\nMembantu Membakar Kalori\r\nJalan kaki secara rutin dapat membantu kamu membakar kalori pada tubuh. Dengan begitu kamu bisa mengontrol berat badan dengan lebih mudah. Ada beberapa hal yang perlu diperhatikan ketika kamu melakukan jalan kaki untuk membakar kalori:\r\n\r\nJarak. Pastikan kamu berjalan kaki dengan jarak yang cukup untuk membantu tubuh membakar kalori.\r\nKecepatan. Gunakan kecepatan yang sedang agar kamu tidak terlalu lambat atau cepat dalam berjalan.\r\nLokasi. Kamu bisa memilih lokasi yang menanjak dan menurun. Kamu juga bisa memilih berjalan kaki pada area anak tangga.\r\nMeningkatkan Imun Tubuh\r\nRutin berjalan kaki bisa menurunkan risiko penyakit flu atau demam ringan. Hal ini terjadi karena berjalan kaki dapat membantu kamu untuk meningkatkan imun tubuh sehingga tubuh tidak mudah terpapar virus atau bakteri yang dapat menyebabkan penyakit. \r\n\r\nMeningkatkan Energi\r\nJika kamu merasa lelah, tidak ada salahnya untuk mencoba berjalan kaki mengelilingi halaman rumah atau lokasi lain yang menarik. Jalan kaki dinilai mampu meningkatkan energi lebih optimal dibandingkan dengan mengonsumsi minuman yang mengandung kafein.\r\n\r\nSaat kamu berjalan kaki, hal ini juga bisa meningkatkan hormon yang membantu mengoptimalkan energi, seperti kortisol, epinefrin, dan norepinefrin. Bahkan dengan berjalan kaki, kegiatan ini membantu meningkatkan peredaran oksigen dalam tubuh.\r\n\r\nMeningkatkan Suasana Hati\r\nBukan hanya kesehatan fisik, berjalan kaki juga memberikan manfaat bagi kesehatan mental. Melansir dari The Primary Care Companion to The Journal of Clinical Psychiatry, berjalan kaki mampu menurunkan rasa cemas, depresi, hingga suasana hati yang buruk. \r\n\r\nJangan lupa untuk melakukan pemanasan sebelum melakukan olahraga apapun. Jika kamu mengalami cedera saat berolahraga, segera kunjungi rumah sakit terdekat untuk penanganan pertama. '),
+(3, 'Olahraga Kardio Efektif untuk Diet yang Maksimal', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrudwstM7aghHF_sn2_3HfjOkkg6nZUqq9bw&usqp=CAU', 'Melakukan aktivitas fisik secara teratur dapat membantu seseorang mengatur berat badannya. Menurut Centers for Disease Control and Prevention (CDC), diet sehat dan aktivitas fisik diperlukan untuk menurunkan berat badan. Namun, menjaga pola makan yang sehat adalah yang paling penting untuk menurunkan berat badan.\r\nUntuk menurunkan berat badan, seseorang perlu mengonsumsi lebih sedikit kalori daripada yang dibakar, dan kebanyakan orang perlu membatasi jumlah kalori dalam makanannya. Mereka juga perlu melakukan aktivitas fisik secara teratur. Kardio adalah cara terbaik untuk membakar lemak dan menurunkan berat badan.\r\nCDC menyatakan bahwa jumlah latihan kardio yang tepat untuk menurunkan berat badan akan berbeda dari orang ke orang. Mereka juga menyarankan agar orang mengikuti rutinitas olahraga mingguan yang terdiri dari salah satu dari berikut ini:\r\n• 150 menit aktivitas aerobik intensitas sedang, seperti jalan cepat.\r\n• 75 menit aktivitas aerobik dengan intensitas tinggi, seperti berlari.\r\n• Campuran yang setara dari keduanya.\r\nMelakukan olahraga tingkat ini setiap minggu sangat penting untuk menjaga kesehatan. Dalam kombinasi dengan diet yang tepat, jumlah aktivitas ini akan membantu penurunan berat badan pada kebanyakan orang.\r\n\r\nLatihan Intensitas Rendah hingga Sedang\r\nIni adalah latihan yang akan membuat detak jantung berada pada 60 hingga 70 persen dari detak jantung maksimum, atau level 4 atau 5 pada grafik pengerahan tenaga yang dirasakan. Jenis latihan ini bisa berupa:\r\n• Naik sepeda lambat.\r\n• Jalan santai.\r\n• Berenang dengan santai.\r\n• Latihan kekuatan ringan.\r\nLatihan Intensitas Sedang\r\nIni adalah latihan yang akan membuat detak jantung berada pada 70 hingga 80 persen dari detak jantung maksimum, atau level 5 hingga 7 pada grafik pengerahan tenaga yang dirasakan. Contoh jenis latihan ini antara lain:\r\n• Jalan cepat.\r\n• Senam aerobik, zumba, atau jenis aerobik lainnya.\r\n• Joging ringan.\r\n\r\nLatihan Intensitas Tinggi atau Kuat\r\nIni adalah latihan yang akan membuat detak jantung berada pada 80 hingga 90 persen dari detak jantung maksimum, atau level 8 atau 9 pada grafik pengerahan tenaga yang dirasakan. Contohnya adalah:\r\n• Skipping.\r\n• Berlari atau lari cepat.\r\n• Latihan interval intensitas tinggi (HIIT).\r\n• Latihan sirkuit intensitas tinggi.\r\n\r\n'),
+(4, 'Olahraga yang Cocok untuk Menjaga Kesehatan Setelah Begadang', 'https://www.freepik.com/free-vector/flat-national-sports-day-illustration_15272799.htm#query=icont%20sport&position=48&from_view=search&track=ais', '1. Jalan Santai\r\nOlahraga pertama yang bisa dilakukan adalah jalan santai. Cobalah bangun pagi seperti biasa dan mengembalikan kebugaran dengan berjalan santai di area sekitar rumah. Udara pagi yang menyegarkan dapat menambah energi dan menghilangkan kantuk karena kekurangan tidur. \r\nTak hanya itu saja, ada banyak sekali manfaat dari aktivitas ini. Salah satunya membantu melancarkan peredaran darah. Oksigen yang dihirup saat pagi hari dalam mengalir ke otak, sehingga rasa kantuk bisa diminimalisir.\r\n2. Sit up atau Push up\r\nOlahraga sit up dan push up bisa kamu lakukan di pagi hari setelah begadang semalaman. Dengan melakukan aktivitas fisik ini, kamu bisa merasa senang dan bahagia karena hormon endorfin yang dihasilkan.\r\nSebab, hormon endorfin merupakan zat kimia pada otak yang dapat menimbulkan perasaan nyaman, senang, dan bahagia. Lakukan gerakan sit up atau push up dengan menyesuaikan kondisi fisik.\r\n3. Squat\r\nJika kamu kerap merasa kantuk saat melakukan pekerjaan pada siang hari, cobalah untuk mencari tempat kosong dan melakukan squat. Gerakan ini bisa menghilangkan perasaan kantuk dan tidak bersemangat, sehingga konsentrasi bisa kembali didapatkan.\r\nKamu juga bisa melakukannya di depan meja kerja. Caranya, berdiri dengan kedua kaki di depan meja dan posisikan kedua tangan sejajar dengan bahu yang diletakkan di meja kerja. Bayangkan seperti sedang duduk di atas kursi.\r\nNah, kamu bisa melakukan gerakan tersebut sebanyak 4 hingga 6 kali atau menyesuaikan dengan kemampuan diri sendiri. Saat berada di posisi layaknya duduk, tahan gerakan tersebut selama 15 detik. Setelah itu, perasaan kantuk bisa menghilang.\r\n4. Lari\r\nJika kamu memiliki rutinitas berlari setiap hari, begadang seharusnya tidak dijadikan halangan. Cobalah untuk terus melakukannya meski harus tidur di pagi hari karena menyaksikan pagelaran Piala Dunia seperti sekarang ini.\r\nApabila kamu tidak melakukannya sebelumnya, coba lakukan aktivitas fisik ini di pagi hari agar tubuh lebih bugar. Tentu saja, rasa kantuk akibat kekurangan tidur juga bisa diminimalisir.\r\nKamu juga perlu menyesuaikan jadwal sesuai jam kerja dan tidak memaksakan diri. Tentukan seberapa lama kamu ingin berlari, tetapi disarankan hanya 10 hanya 15 menit karena kondisi tubuh bisa jadi tidak maksimal.\r\nInilah beberapa olahraga yang cocok untuk dilakukan pasca begadang karena pagelaran Piala Dunia 2022 di Qatar. Selain berolahraga, cobalah untuk mengurangi camilan yang tidak sehat dan perbanyak makan buah jika lapar di malam hari. Dengan begitu, pengembalian kondisi tubuh lebih cepat terjadi.\r\n'),
+(5, 'Olahraga Lari Bisa Bantu Menjaga Kesehatan Mental', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOcQm_Ri0NgF77Yu_L9RN35mv6gt_swmN0g&usqp=CAU', 'Latihan fisik apa pun itu memiliki banyak manfaat bagi kesehatan. Saat kamu berolahraga dengan cara berlari, maka endorfin dan serotonin, yaitu zat kimia di otak yang dapat meningkatkan suasana hati, dilepaskan oleh tubuh. Dengan berlari secara teratur, dapat memberikan dorongan yang konsisten terhadap rasa bahagia, sehingga tubuh dan pikiran menjadi lebih baik.\r\nNah, berikut itu beberapa manfaat lari yang baik untuk kesehatan mental:\r\n\r\n1. Mengurangi Perasaan Stres\r\nSalah satu manfaat lari sehingga baik untuk kesehatan mental adalah mampu mengurangi perasaan stres yang dirasakan. Hal ini disebabkan endocannabinoid yang dilepaskan oleh tubuh yang merupakan zat biokimia yang mirip dengan konsumsi ganja. Zat kimia ini diproduksi secara alami di dalam tubuh dan menyebar di aliran darah hingga ke otak. Hal ini dapat memberikan mengurangi perasaan stres dalam jangka pendek dan menenangkan.\r\n\r\n2. Meningkatkan Suasana Hati\r\nBerlari dapat menjaga kesehatan mental dengan cara mengurangi rasa cemas dan depresi. Saat berlari, sirkulasi darah ke otak meningkat dan bagian otak dapat merespons stres sehingga memperbaiki suasana hati. Hal ini dapat menyebabkan perubahan untuk sementara yang dapat meningkatkan reaksi tubuh pada situasi yang menimbulkan rasa stres.\r\n\r\n3. Membuat Tidur Lebih Nyenyak\r\nBerlari telah terbukti untuk membantu seseorang mendapatkan jadwal tidur yang normal. Hal ini disebabkan bahan kimia yang dilepaskan selama dan setelah berlari membuat tubuh menjadi lebih rileks, sehingga tidur dapat lebih nyenyak. Selain itu, tubuh yang lelah berusaha untuk mengembalikan kekuatannya, sehingga kamu masuk dalam metode “deep sleep”. Dengan memiliki jadwal tidur yang teratur, sangat baik untuk otak dan kesehatan mental.\r\nJika kamu ingin tahu lebih jauh terkait manfaat dari lari untuk kesehatan mental, dokter dari Halodoc siap membantu untuk memberikan jawaban hingga saran saat kamu ingin melakukannya. \r\n\r\n4. Meningkatkan Kekuatan Otak\r\nLari dapat meningkatkan kekuatan otak dengan cara membuat sel-sel otak baru dan meningkatkan kinerja otak secara keseluruhan. Saat melakukan lari yang berat, kadar protein yang dapat membantu untuk pengambilan keputusan, serta pemikiran dan pembelajaran yang lebih cepat dihasilkan. Maka dari itu, pastikan terus meningkatkan beban dari olahraga lari agar kesehatan mental tetap terjaga.\r\n\r\n5. Mengatasi Masalah Kesehatan\r\nJika kamu sudah mengalami gangguan mental, lari dapat membantu tubuh untuk lebih cepat pulih dari masalah ini. Disebutkan jika seseorang berlari secara teratur, efek yang dihasilkan sama seperti obat untuk meredakan gejala kecemasan dan depresi. Olahraga ini dianjurkan untuk dilakukan selama terapi dan pemulihan untuk meringankan gejala yang dapat timbul akibat penyakit mental.\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_sehatyuks`
 --
 
 CREATE TABLE `user_sehatyuks` (
@@ -191,7 +214,7 @@ CREATE TABLE `user_sehatyuks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `user_sehatyuks`
+-- Dumping data for table `user_sehatyuks`
 --
 
 INSERT INTO `user_sehatyuks` (`id`, `firstName`, `lastName`, `gender`, `email`, `password`, `number`) VALUES
@@ -204,89 +227,101 @@ INSERT INTO `user_sehatyuks` (`id`, `firstName`, `lastName`, `gender`, `email`, 
 --
 
 --
--- Indeks untuk tabel `answer_table`
+-- Indexes for table `answer_table`
 --
 ALTER TABLE `answer_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `article_table`
+-- Indexes for table `article_table`
 --
 ALTER TABLE `article_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `covid_table`
+-- Indexes for table `covid_table`
 --
 ALTER TABLE `covid_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `drug_table`
+-- Indexes for table `drug_table`
 --
 ALTER TABLE `drug_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `food_table`
+-- Indexes for table `food_table`
 --
 ALTER TABLE `food_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `lingkungan_table`
+-- Indexes for table `lingkungan_table`
 --
 ALTER TABLE `lingkungan_table`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_sehatyuks`
+-- Indexes for table `olahraga_table`
+--
+ALTER TABLE `olahraga_table`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user_sehatyuks`
 --
 ALTER TABLE `user_sehatyuks`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `answer_table`
+-- AUTO_INCREMENT for table `answer_table`
 --
 ALTER TABLE `answer_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
 
 --
--- AUTO_INCREMENT untuk tabel `article_table`
+-- AUTO_INCREMENT for table `article_table`
 --
 ALTER TABLE `article_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `covid_table`
+-- AUTO_INCREMENT for table `covid_table`
 --
 ALTER TABLE `covid_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `drug_table`
+-- AUTO_INCREMENT for table `drug_table`
 --
 ALTER TABLE `drug_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT untuk tabel `food_table`
+-- AUTO_INCREMENT for table `food_table`
 --
 ALTER TABLE `food_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `lingkungan_table`
+-- AUTO_INCREMENT for table `lingkungan_table`
 --
 ALTER TABLE `lingkungan_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `user_sehatyuks`
+-- AUTO_INCREMENT for table `olahraga_table`
+--
+ALTER TABLE `olahraga_table`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `user_sehatyuks`
 --
 ALTER TABLE `user_sehatyuks`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;

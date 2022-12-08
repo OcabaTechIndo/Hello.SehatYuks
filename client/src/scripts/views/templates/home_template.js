@@ -95,8 +95,8 @@ class Home extends HTMLElement {
                 </section>
                 </div>
 
-
-        <div class="container baner-1">
+<div class="baner-1">
+        <div class="container">
         <div class="baner1">
         <div class="baner1-img">
         <img src="../Baner1.png" class="img-fluid" alt="Baner Kesehatan diri">
@@ -106,7 +106,7 @@ class Home extends HTMLElement {
         <div class="baner1-grid">
         <div class="banerCar1a">
         <div class="card-product-obat">
-        <div class="card">
+        <div class="card img-baner1">
             <img src="../health-image1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">Kesehatana Makanan</h5>
@@ -119,7 +119,7 @@ class Home extends HTMLElement {
 
         <div class="banerCar1b">
         <div class="card-product-obat">
-        <div class="card">
+        <div class="card img-baner1">
             <img src="../image-health3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">Latihan Sehat</h5>
@@ -131,25 +131,87 @@ class Home extends HTMLElement {
         </div>
         </div>
         </div>
-
-<div clas="container">
-<div class="baner2">
-
-<img src="../Baner2.png" class="card-img-top" alt="...">
-
-</div>
 </div>
 
 
-<div clas="container">
-<div class="baner3">
 
-<img src="../Baner3.png" class="card-img-top" alt="...">
 
+<div class="baner-2">
+
+        <div class="baner2">
+        <div class="baner2-img">
+        <img src="../Baner2.png" class="img-fluid" alt="Baner Kesehatan diri">
+        </div>
+        </div>
+        <div class="container">
+        <div class="baner2-grid">
+        <div class="banerCar2a">
+        <div class="card-product-obat">
+        <div class="card img-baner2">
+        <img src="../image-helth 4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Kesehatan Lingkungan</h5>
+        <p class="card-text">Sehat Dengan Lingkungan yang bersih</p>
+        <a href="#/lingkungan" class="btn btn-primary sliderButton">Masuk Komunitas</a>
+        </div>
+        </div>
+    </div>
+        </div>
+
+        <div class="banerCar2b">
+        <div class="card-product-obat">
+        <div class="card img-baner2">
+        <img src="../health-image2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Covid 19</h5>
+        <p class="card-text">Dapatkan Berita Informasi Seputar Covid 19</p>
+        <a href="#/covid19" class="btn btn-primary sliderButton">Cek Disini</a>
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+        </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="baner-3">
+        <div class="baner3">
+        <div class="baner3-img">
+        <img src="../Baner3.png" class="img-fluid" alt="Baner Kesehatan diri">
+        </div>
+        </div>
+        <div class="container">
+        <div class="baner3-grid">
+        <div class="banerCar3a">
+        <div class="img-baner3">
+        <img src="../komunitas.png" class="card-img-top" alt="...">
+    </div>
+        </div>
+        <div class="banerCar3b">
+        <div class="joinKom">
+        <h1>Yuk Join Komunitas IRIS </h1>
+        <p> Dihalaman komunitas Kamu sharing tentang masalah lingkungan hidup
+        dengan orang-orang yang juga sudah bergabung sebelumnya</P>
+        <a href="#/komunitas_lingkungan" class="btn btn-primary sliderButton">Masuk Halaman Komunitas</a>
+        </div>
+        </div>
+        </div>
+        </div>
 </div>
-
-
         `;
     }
 }

@@ -12,7 +12,7 @@ const HomePage = {
         const elementFix = document.querySelector('home-element');
         const elementData = elementFix.dataElement;
 
-        const { elementCarousel, elementSliding, spinnerElement } = elementData;
+        const { elementCarousel, elementSliding } = elementData;
         console.log(elementCarousel);
         console.log(elementSliding);
         /* eslint-disable eqeqeq */
@@ -53,34 +53,6 @@ const HomePage = {
         };
         span[1].onclick = () => { right_mover(); };
         span[0].onclick = () => { left_mover(); };
-
-        const getDataToLocalStorage = () => JSON.parse(localStorage.getItem('userAccessToken'));
-
-        const makeLoginLogoutView = () => {
-            const elementContainerValidationValid = document.querySelector('#containerValidationButton');
-            elementContainerValidationValid.innerHTML = '';
-            const dataValidLogin = getDataToLocalStorage();
-            if(dataValidLogin == null) {
-                spinnerElement.removeAttribute('hidden');
-                setTimeout(() => {
-                    spinnerElement.setAttribute('hidden', '');
-                    elementContainerValidationValid.innerHTML = '<a class="btn btn-loginValidation" href="#/login">Login</a>';
-                }, 2000);
-            }else{
-                spinnerElement.removeAttribute('hidden');
-                setTimeout(() => {
-                    spinnerElement.setAttribute('hidden', '');
-                    elementContainerValidationValid.innerHTML = '<button id="buttonLogout" class="btn btn-loginValidation">Logout</button>';
-                    const elementButtonLogout = document.querySelector('#buttonLogout');
-                    elementButtonLogout.addEventListener('click', () => {
-                        localStorage.removeItem('userAccessToken');
-                        makeLoginLogoutView();
-                    });
-                }, 2000);
-            }
-        };
-
-        makeLoginLogoutView();
     },
 
 };

@@ -44,7 +44,7 @@ class Home extends HTMLElement {
                             <div class="card-body">
                             <h5 class="card-title">Kesehatana Makanan</h5>
                             <p class="card-text">Tips Menjaga Kesehatan Dengan Mengatur Pola Makan</p>
-                            <a href="#/food_page" class="btn btn-primary">Go somewhere</a>
+                            <a href="#/food_page" class="btn btn-primary sliderButton">Cek Disini</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ class Home extends HTMLElement {
                             <div class="card-body">
                             <h5 class="card-title">Covid 19</h5>
                             <p class="card-text">Dapatkan Berita Informasi Seputar Covid 19</p>
-                            <a href="#/covid19" class="btn btn-primary">Go somewhere</a>
+                            <a href="#/covid19" class="btn btn-primary sliderButton">Cek Disini</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ class Home extends HTMLElement {
                             <div class="card-body">
                             <h5 class="card-title">Latihan Sehat</h5>
                             <p class="card-text">Melatih Mental Dengan Pola Sehat Hindari Stres</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary sliderButton">Cek Disini</a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ class Home extends HTMLElement {
                             <div class="card-body">
                             <h5 class="card-title">Kesehatan Lingkungan</h5>
                             <p class="card-text">Sehat Dengan Lingkungan yang bersih</p>
-                            <a href="#/lingkungan" class="btn btn-primary">Masuk Komunitas</a>
+                            <a href="#/lingkungan" class="btn btn-primary sliderButton">Masuk Komunitas</a>
                             </div>
                         </div>
                     </div>
@@ -88,12 +88,68 @@ class Home extends HTMLElement {
                         <div class="card-body">
                         <h5 class="card-title">Komunitas Linkungan</h5>
                         <p class="card-text">Komunitas Untuk Berbagi Informasi Lingkungan</p>
-                        <a href="#/komunitas_lingkungan" class="btn btn-primary">Go somewhere</a>
+                        <a href="#/komunitas_lingkungan" class="btn btn-primary sliderButton">Cek Disini</a>
                         </div>
                     </div>
                 </div>
                 </section>
+                </div>
+
+
+        <div class="container baner-1">
+        <div class="baner1">
+        <div class="baner1-img">
+        <img src="../Baner1.png" class="img-fluid" alt="Baner Kesehatan diri">
         </div>
+        </div>
+        
+        <div class="baner1-grid">
+        <div class="banerCar1a">
+        <div class="card-product-obat">
+        <div class="card">
+            <img src="../health-image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Kesehatana Makanan</h5>
+            <p class="card-text">Tips Menjaga Kesehatan Dengan Mengatur Pola Makan</p>
+            <a href="#/food_page" class="btn btn-primary sliderButton">Cek Disini</a>
+            </div>
+        </div>
+    </div>
+        </div>
+
+        <div class="banerCar1b">
+        <div class="card-product-obat">
+        <div class="card">
+            <img src="../image-health3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Latihan Sehat</h5>
+            <p class="card-text">Melatih Mental Dengan Pola Sehat Hindari Stres</p>
+            <a href="#" class="btn btn-primary sliderButton">Cek Disini</a>
+            </div>
+        </div>
+    </div>
+        </div>
+        </div>
+        </div>
+
+<div clas="container">
+<div class="baner2">
+
+<img src="../Baner2.png" class="card-img-top" alt="...">
+
+</div>
+</div>
+
+
+<div clas="container">
+<div class="baner3">
+
+<img src="../Baner3.png" class="card-img-top" alt="...">
+
+</div>
+</div>
+
+
         `;
     }
 }

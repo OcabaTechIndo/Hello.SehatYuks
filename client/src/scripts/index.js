@@ -6,6 +6,7 @@ import '../scss/styles.scss';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/style-carousel.css';
+import '../styles/baner.css';
 import 'bootstrap';
 import swRegister from './utils/sw_register';
 import App from './views/app';

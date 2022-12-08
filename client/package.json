@@ -66,6 +66,7 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "flickity": "^3.0.0",
+    "font-awesome": "^4.7.0",
     "fullpage.js": "^4.0.15",
     "idb": "^7.1.0",
     "jquery": "^3.6.1",

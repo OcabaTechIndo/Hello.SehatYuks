@@ -2,6 +2,10 @@
 /* eslint-disable import/no-duplicates */
 // Import our custom CSS
 import 'regenerator-runtime';
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
 import '../scss/styles.scss';
 import '../styles/main.css';
 import '../styles/responsive.css';

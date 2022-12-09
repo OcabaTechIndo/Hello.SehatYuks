@@ -37,7 +37,7 @@ class LoginUser extends HTMLElement {
             <img class="logo_login" src="./logo/hero2.webp" alt="logo IRIS">
         </div> 
         <div class="loginForm"> 
-        <form class=" needs-validation validation-user p-5 mt-5">
+        <form class=" needs-validation validation-user p-5">
             <div class="mb-3 text-start">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com" required>

@@ -6,8 +6,8 @@ dotenv.config();
     host: 'localhost',
     user: 'root',
     password: '',
-    database: process.env.DATABASE,
-    port: process.env.DB_PORT
+    database: 'sehatyuks',
+    port: 3306
 })
 
 connection.connect((err) => {

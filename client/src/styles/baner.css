@@ -113,10 +113,12 @@ text-align: center;
       /*baner 3 */
 
       .baner-3{
-      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 2);
+        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
         margin-top: 20px;
       }
-          
+          .img-baner3 img{
+            max-width: 400px;
+          }
           
           .baner3-grid {
               display: grid;
@@ -153,3 +155,8 @@ text-align: center;
               }
             
             }
+
+.detailIris{
+  margin: 20px;
+  text-align: justify;
+}

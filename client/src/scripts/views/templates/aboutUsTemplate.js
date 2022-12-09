@@ -6,6 +6,15 @@ class AboutUs extends HTMLElement {
 
     render() {
         this.innerHTML = `
+        <div class="">
+        <nav class="petunjukHalaman" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">AboutUS</li>
+        </ol>
+        </nav>
+        </div>
+        <div class="detailIris">
             <h1>About IRIS</h1>
             <p>IRIS merupakan aplikasi berbasis web yang menyediakan berbagai informasi seputar dunia kesehatan. IRIS dibuat
                 oleh 4 orang yang sudah berpengalaman membuat berbagai website.
@@ -24,8 +33,8 @@ class AboutUs extends HTMLElement {
                 Layanan ini merupakan fitur untuk bertanya pada komunitas sehat. terdapat form untuk memasukkan pertanyaan . Form bisa diinput jika sudah login akun di IRIS. <br>
                 <br>
                 IRIS tidak hanya memberikan layanan pusat informasi seprti artikel-artikel diatas, IRIS juga menyediakan layanan informasi obat-obatan yang bisa berguna untuk kesehatan tubuh. 
-
             </p>
+            </div>
             <div id="profil_content" class="profil_container">
                 <div class="profil_card">
                     <div class="profil_head">
@@ -43,7 +52,9 @@ class AboutUs extends HTMLElement {
                         <p>Front End Developer</p>
                         <div class="link_profile">
                             <a href="https://github.com/Understrike123">GitHub</a>
+                            <a>|</a> 
                             <a href="https://www.instagram.com/muhilhamfebr_/">Instagram</a>
+                            <a>|</a> 
                             <a href="https://www.linkedin.com/in/muhammad-ilham-febriana-4234a21a4/">linkedin</a>
                         </div>
                     </div>
@@ -64,6 +75,7 @@ class AboutUs extends HTMLElement {
                         <p>Full Stack Developer</p>
                         <div class="link_profile">
                             <a href="https://github.com/IhratPramudya">GitHub</a>
+                            <a>|</a> 
                             <a href="https://www.linkedin.com/in/ihrat-pramudya-a4bb611a4">linkedin</a>
                         </div>
                     </div>
@@ -78,12 +90,14 @@ class AboutUs extends HTMLElement {
                     </div>
                     <div class="profil_body">
                         <p>Rizal Suryana</p>
-                        <p>22</p>
-                        <p>Tasik, Jawab Barat</p>
-                        <p>Universitas Pertamina</p>
+                        <p>22 Oktober</p>
+                        <p>Tasikmalaya, West Java</p>
+                        <p>Pertamina University</p>
                         <p>Front End Developer</p>
                         <div class="link_profile">
-                            <a href="https://github.com/rizalsuryana">GitHub</a>    
+                            <a href="https://github.com/rizalsuryana">GitHub</a>
+                            <a>|</a>    
+                            <a href="https://www.linkedin.com/in/rizalsuryana/">LinkedIn</a>    
                         </div>
                     </div>
                 </div>
@@ -103,6 +117,7 @@ class AboutUs extends HTMLElement {
                         <p>Back End Developer</p>
                         <div class="link_profile">
                             <a href="https://github.com/susija">GitHub</a>
+                            <a>|</a> 
                             <a href="http://www.linkedin.com/in/susija-meidiana">linkedin</a>
                         </div>
                     </div>

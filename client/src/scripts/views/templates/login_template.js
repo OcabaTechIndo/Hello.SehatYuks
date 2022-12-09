@@ -40,7 +40,7 @@ class LoginUser extends HTMLElement {
         <div class="iris-login"> 
         <h1> Login | IRIS </h1>
         </div>
-        <form class=" needs-validation validation-user p-5">
+        <form class=" needs-validation validation-user">
             <div class="mb-3 text-start">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com" required>

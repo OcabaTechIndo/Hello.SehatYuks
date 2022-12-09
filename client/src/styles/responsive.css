@@ -2,6 +2,15 @@
   .container {
     flex-wrap: nowrap;
   }
+
+  .baners img {
+    width: 100%;
+    height: 360px;
+  }
+
+  .baners {
+    height: 360px;
+  }
 }
 
 @media screen and (min-width: 376px) {

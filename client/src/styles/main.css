@@ -26,16 +26,16 @@ main {
 }
 
 /*navigasi*/
-.breadcrumb-item :active{
+.breadcrumb-item :active {
   color: #92E3A9;
 }
 
-#mainNav a:hover{
+#mainNav a:hover {
   font-weight: bolder;
   color: #92E3A9;
 }
 
-#mainNav a:active{
+#mainNav a:active {
   color: #165a72;
 }
 
@@ -333,6 +333,7 @@ main {
   border-radius: 5px;
   width: 400px;
   height: 600px;
+  padding: 25px;
   justify-self: center;
 }
 
@@ -576,17 +577,19 @@ main {
 .baners img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 
 .logo_login {
-border-radius: 5px;
+  border-radius: 5px;
 }
-.iris-login h1{
+
+.iris-login h1 {
   font-weight: bold;
   color: #92E3A9;
 }
 
-.Grid-login button{
+.Grid-login button {
   font-weight: bold;
 }
 

@@ -84,7 +84,7 @@ class Home extends HTMLElement {
 
                     <div class="card-product-obat">
                     <div class="card" style="width: 21rem;"">
-                        <img src="../komunitas lingkungan.jpg" class="card-img-top" alt="...">
+                        <img src="../komunitas lingkungan.jpg" class="card-img-top optimalin-gambar" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Komunitas Linkungan</h5>
                         <p class="card-text">Komunitas Untuk Berbagi Informasi Lingkungan</p>

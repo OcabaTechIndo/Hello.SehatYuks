@@ -16,9 +16,13 @@ main {
   height: 100%;
 }
 
-.card-img-top {
+.optimalin-gambar {
   height: 213px;
   object-fit: contain;
+}
+
+.card-img-top {
+  border-radius: 5px 5px 0px 0px;
 }
 
 /*navigasi*/

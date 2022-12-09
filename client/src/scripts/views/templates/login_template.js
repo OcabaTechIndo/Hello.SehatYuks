@@ -47,12 +47,12 @@ class LoginUser extends HTMLElement {
                 <input type="password" class="form-control" id="password" placeholder="*********" required>
             </div>
             <div class="container">
-            <div class="row button_login">
-                <div class="col">
+            <div class="button_login row">
+                <div class="col tombol_login">
                     <button id="btn-submit-login" class="btn btn-validation">Masuk</button>
                 </div>
         </form>
-                <div class="col">
+                <div class="col tombol_login">
                     <a href="#/register_page" class="btn btn-validation">Daftar</a>
                 </div>
             </div>

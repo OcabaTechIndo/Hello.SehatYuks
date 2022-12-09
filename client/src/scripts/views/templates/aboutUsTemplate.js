@@ -9,7 +9,7 @@ class AboutUs extends HTMLElement {
             <h1>About IRIS</h1>
             <p>IRIS merupakan aplikasi berbasis web yang menyediakan berbagai informasi seputar dunia kesehatan. IRIS dibuat
                 oleh 4 orang yang sudah berpengalaman membuat berbagai website.
-                Terdapat banyak layanan informasi yang berupa artikel yang ada di IRIS, diantaranya: <br> 
+                IRIS menyediakan 2 layanan informasi utama, yaitu artikel kesehatan dan info Obat. Artikel kesehatan ada berbagai jenis artikel, diantaranya: <br> 
                 1 . Layanan kesehatan makanan. <br>
                 Layanan ini memberikan informasi-informasi tentang makanan yang sehat dikonsumsi. Berbagai bahan pangan nabati dan hewani yang memberi banyak manfaat pada tubuh speerti vitamin dan mineral.
                 Terdapat detail informasi kesehatan pada masing-masing makanan, detail-detail tersebut dibuat sedetail mungkin untuk memberikan informasi yang berguna. <br>
@@ -20,11 +20,10 @@ class AboutUs extends HTMLElement {
                 4 . Layanan kesehatan lingkungan. <br>
                 Pada layanan ini berisi artikel-artikel untuk menjaga kesehatan lingkungan. Kesehatan lingkungan juga sangat diperlukan, karena lingkungan juga berperan untuk menjaga kesehatan tubuh manusia. Menjaga lingkungan juga tidak hanyak berguna bagi manusia, hewan dan tumbuhan juga merasakan manfaatnya.
                 Maka dari itu IRIS menyediakan layanan ini karena berperan dalam menjaga kesehatan tubuh dan termasuk dunia kesehatan juga. <br>
-                5 .  Komunitas lingkungan. <br>
-                Layanan ini merupakan fitur untuk bertanya pada komunitas sehat. terdapat form untuk memasukkan pertanyaan . Form bisa diinput jika sudah login akun di IRIS. <br>
                 <br>
-                IRIS tidak hanya memberikan layanan pusat informasi seprti artikel-artikel diatas, IRIS juga menyediakan layanan informasi obat-obatan yang bisa berguna untuk kesehatan tubuh. 
-
+                IRIS tidak hanya memberikan layanan informasi seprti artikel-artikel diatas, IRIS juga menyediakan layanan informasi obat-obatan yang bisa berguna untuk kesehatan tubuh. IRIS juga menyedaiakan layanan untuk user bertanya, seperti layanan komunitas lingkungan.
+                Komunitas lingkungan merupakan fitur untuk bertanya pada komunitas sehat. terdapat form untuk memasukkan pertanyaan . Form bisa diinput jika sudah login akun di IRIS.
+                
             </p>
             <div id="profil_content" class="profil_container">
                 <div class="profil_card">

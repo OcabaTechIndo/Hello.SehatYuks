@@ -10,7 +10,7 @@
   }
 
   .profil_card {
-    width: 350px;
+    width: 100%;
   }
 
   .profil_head img {
@@ -154,6 +154,7 @@
   }
 
 }
+
 /* detail all contents*/
 @media screen and (max-width: 1000px) {
   .Grid {
@@ -209,7 +210,9 @@
 
 @media screen and (min-width: 769px) {
   .profil_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 
   .profil_head img {

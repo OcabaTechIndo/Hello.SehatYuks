@@ -7,7 +7,8 @@
     "start": "nodemon ./src/server.js",
     "forever-server": "forever ./src/server.js",
     "forever-stop": "forever stop 0 ./src/server.js",
-    "dbsql": "node ./dbService/dataBaseDrug.js"
+    "dbsql": "node ./dbService/dataBaseDrug.js",
+    "start-prod": "NODE_ENV=production node ./src/server.js"
   },
   "keywords": [],
   "author": "",

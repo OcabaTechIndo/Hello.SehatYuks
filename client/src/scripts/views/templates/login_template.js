@@ -36,7 +36,10 @@ class LoginUser extends HTMLElement {
         <div class="baners">
             <img class="logo_login" src="./logo/hero2.webp" alt="logo IRIS">
         </div> 
-        <div class="loginForm"> 
+        <div class="loginForm">
+        <div class="iris-login"> 
+        <h1> Login | IRIS </h1>
+        </div>
         <form class=" needs-validation validation-user p-5">
             <div class="mb-3 text-start">
                 <label for="email" class="form-label">Email address</label>

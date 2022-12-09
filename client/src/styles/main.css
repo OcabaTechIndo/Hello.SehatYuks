@@ -26,7 +26,18 @@ main {
 }
 
 /*navigasi*/
+.breadcrumb-item :active{
+  color: #92E3A9;
+}
 
+#mainNav a:hover{
+  font-weight: bolder;
+  color: #92E3A9;
+}
+
+#mainNav a:active{
+  color: #165a72;
+}
 
 .navigasi-menu {
   padding-left: 23px;
@@ -319,7 +330,6 @@ main {
 /*validation */
 
 .validation-user {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 5px;
   width: 400px;
   height: 600px;
@@ -569,7 +579,15 @@ main {
 }
 
 .logo_login {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+}
+.iris-login h1{
+  font-weight: bold;
+  color: #92E3A9;
+}
+
+.Grid-login button{
+  font-weight: bold;
 }
 
 footer {

@@ -84,7 +84,7 @@ class Home extends HTMLElement {
 
                     <div class="card-product-obat">
                     <div class="card" style="width: 21rem;"">
-                        <img src="../komunitas lingkungan.jpg" class="card-img-top optimalin-gambar" alt="...">
+                        <img src="../image-helth 4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Komunitas Linkungan</h5>
                         <p class="card-text">Komunitas Untuk Berbagi Informasi Lingkungan</p>
@@ -132,10 +132,6 @@ class Home extends HTMLElement {
         </div>
         </div>
 </div>
-
-
-
-
 <div class="baner-2">
 
         <div class="baner2">
@@ -173,21 +169,6 @@ class Home extends HTMLElement {
         </div>
         </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="baner-3">
         <div class="baner3">
         <div class="baner3-img">
@@ -198,8 +179,8 @@ class Home extends HTMLElement {
         <div class="baner3-grid">
         <div class="banerCar3a">
         <div class="img-baner3">
-        <img src="../komunitas.png" class="card-img-top" alt="...">
-    </div>
+        <img src="../komunitas lingkungan.jpg" class="card-img-top" alt="...">
+         </div>
         </div>
         <div class="banerCar3b">
         <div class="joinKom">

@@ -11,6 +11,19 @@
   .baners {
     height: 360px;
   }
+
+  .profil_head {
+    text-align: center;
+  }
+
+  .profil_head img {
+    width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+
+  }
 }
 
 @media screen and (min-width: 376px) {
@@ -212,6 +225,23 @@
 }
 
 /*  apa nioh */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .profil_head img {
+    border-radius: 5px;
+    height: 300px;
+    width: 290px;
+  }
+
+  .profil_card {
+    padding: 35px;
+  }
+
+  .profil_head {
+    text-align: center;
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
   .profil_container {
@@ -237,21 +267,13 @@
 
 @media screen and (min-width: 1025px) {
   .profil_head img {
-    width: 100%;
     border-radius: 5px;
     height: 300px;
+    width: 100%;
   }
 
   .profil_body {
     font-size: 18px;
     padding: 5px 10px;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .profil_head img {
-    width: 100%;
-    border-radius: 5px;
-    height: 370px;
   }
 }

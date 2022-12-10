@@ -18,21 +18,26 @@ class AboutUs extends HTMLElement {
             <h1>About IRIS</h1>
             <p> IRIS merupakan aplikasi berbasis web yang menyediakan berbagai informasi seputar dunia kesehatan. IRIS dibuat
                 oleh 4 orang yang sudah berpengalaman membuat berbagai website.
-                IRIS menyediakan 2 layanan informasi utama, yaitu artikel kesehatan dan info Obat. Artikel kesehatan ada berbagai jenis artikel, diantaranya: <br> 
+                IRIS menyediakan 2 layanan informasi utama, yaitu artikel kesehatan dan info Obat. Artikel kesehatan ada berbagai jenis artikel, diantaranya: <br> <br>
                 1 . Layanan kesehatan makanan. <br>
                 Layanan ini memberikan informasi-informasi tentang makanan yang sehat dikonsumsi. Berbagai bahan pangan nabati dan hewani yang memberi banyak manfaat pada tubuh speerti vitamin dan mineral.
-                Terdapat detail informasi kesehatan pada masing-masing makanan, detail-detail tersebut dibuat sedetail mungkin untuk memberikan informasi yang berguna. <br>
+                Terdapat detail informasi kesehatan pada masing-masing makanan, detail-detail tersebut dibuat sedetail mungkin untuk memberikan informasi yang berguna. <br><br>
                 2 . Layanan tentang COVID 19. <br>
-                Layanan ini berisi informasi-informasi tentang virus COVID-19. Berbagai artikel seperti varian virus COVID-19, vaksinasi, dan gejala-penanganannya. Layanan ini berfungsi agar tidak ada lagi berita hoax yang tersebar luas dan dikonsumsi mentah-mentah. <br>
+                Layanan ini berisi informasi-informasi tentang virus COVID-19. Berbagai artikel seperti varian virus COVID-19, vaksinasi, dan gejala-penanganannya. Layanan ini berfungsi agar tidak ada lagi berita hoax yang tersebar luas dan dikonsumsi mentah-mentah. <br><br>
                 3 . Layanan Latihan sehat. <br>
-                Berisi cara-cara pelatihan pada tubuh untuk menjaga kesehatan jasmani dan rohani. <br>
+                Berisi cara-cara pelatihan pada tubuh untuk menjaga kesehatan jasmani dan rohani. <br><br>
                 4 . Layanan kesehatan lingkungan. <br>
                 Pada layanan ini berisi artikel-artikel untuk menjaga kesehatan lingkungan. Kesehatan lingkungan juga sangat diperlukan, karena lingkungan juga berperan untuk menjaga kesehatan tubuh manusia. Menjaga lingkungan juga tidak hanyak berguna bagi manusia, hewan dan tumbuhan juga merasakan manfaatnya.
-                Maka dari itu IRIS menyediakan layanan ini karena berperan dalam menjaga kesehatan tubuh dan termasuk dunia kesehatan juga. <br>
+                Maka dari itu IRIS menyediakan layanan ini karena berperan dalam menjaga kesehatan tubuh dan termasuk dunia kesehatan juga. <br><br>
                 <br>
                 IRIS tidak hanya memberikan layanan informasi seprti artikel-artikel diatas, IRIS juga menyediakan layanan informasi obat-obatan yang bisa berguna untuk kesehatan tubuh. IRIS juga menyedaiakan layanan untuk user bertanya, seperti layanan komunitas lingkungan.
                 Komunitas lingkungan merupakan fitur untuk bertanya pada komunitas sehat. terdapat form untuk memasukkan pertanyaan . Form bisa diinput jika sudah login akun di IRIS.                
             </p>
+            <br>
+            <br>
+            </div>
+            <div class="kenalan_profile">
+                <h2>Kenalan dengan para developers</h2>
             </div>
             <div id="profil_content" class="profil_container">
                 <div class="profil_card">
@@ -45,14 +50,12 @@ class AboutUs extends HTMLElement {
                     </div>
                     <div class="profil_body">
                         <p>Muhammad Ilham Febriana</p>
-                        <p>Jakarta, 26 February 2001</p>
+                        <p>21 Tahun</p>
                         <p>Depok, Jawa Barat</p>
                         <p>Universitas Pertamina</p>
                         <p>Front End Developer</p>
                         <div class="link_profile">
                             <a href="https://github.com/Understrike123">GitHub</a>
-                            <a>|</a> 
-                            <a href="https://www.instagram.com/muhilhamfebr_/">Instagram</a>
                             <a>|</a> 
                             <a href="https://www.linkedin.com/in/muhammad-ilham-febriana-4234a21a4/">linkedin</a>
                         </div>
@@ -68,8 +71,8 @@ class AboutUs extends HTMLElement {
                     </div>
                     <div class="profil_body">
                         <p>Ihrat Pramudya</p>
-                        <p>20</p>
-                        <p>Papua</p>
+                        <p>20 Tahun</p>
+                        <p>Jayapura, Papua</p>
                         <p>Universitas Bina Sarana Informatika</p>
                         <p>Full Stack Developer</p>
                         <div class="link_profile">
@@ -89,8 +92,8 @@ class AboutUs extends HTMLElement {
                     </div>
                     <div class="profil_body">
                         <p>Rizal Suryana</p>
-                        <p>22 Oktober</p>
-                        <p>Tasikmalaya, West Java</p>
+                        <p>22 Tahun</p>
+                        <p>Tasikmalaya, Jawa barat</p>
                         <p>Pertamina University</p>
                         <p>Front End Developer</p>
                         <div class="link_profile">
@@ -110,7 +113,7 @@ class AboutUs extends HTMLElement {
                     </div>
                     <div class="profil_body">
                         <p>Susija Meidiana</p>
-                        <p>20</p>
+                        <p>20 Tahun</p>
                         <p>Semarang, Jawa Tengah</p>
                         <p>Universitas Dian Nuswantoro</p>
                         <p>Back End Developer</p>

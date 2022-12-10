@@ -2,9 +2,7 @@ import routes from '../routes/routes';
 import UrlParser from '../routes/URL_parser';
 
 class App {
-  constructor({ button, drawer, content }) {
-    this._button = button;
-    this._drawer = drawer;
+  constructor({ content }) {
     this._content = content;
   }
 
@@ -14,11 +12,11 @@ class App {
     // eslint-disable-next-line no-underscore-dangle
     this._content.innerHTML = await page.render();
     await page.afterRender();
-    const skipLinkElem = document.querySelector('.skip_link');
-    skipLinkElem.addEventListener('click', (event) => {
-      event.preventDefault();
-      document.querySelector('#mainContent').focus();
-    });
+    // const skipLinkElem = document.querySelector('.skip_link');
+    // skipLinkElem.addEventListener('click', (event) => {
+    //   event.preventDefault();
+    //   document.querySelector('#mainContent').focus();
+    // });
   }
 }
 

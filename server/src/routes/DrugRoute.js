@@ -5,14 +5,14 @@
 // app.use(express.json());
 // app.use(express.urlencoded({ extended : false }));
 const DbDrug = require('../controlers/drugControler')
-    module.exports = function(app){
-        app.post('/obat/add', (request, response) => {
+module.exports = {
+        createDrug : (request, response) => {
             const {
-                background, brand_name, name_general, numberdrugaccess, summary, indicator
+                summary, name_general, image_drug, indication, brand_name, background
             } = request.body; 
         
             const DrugData = {
-                background, brand_name, name_general, numberdrugaccess, summary, indicator
+                summary, name_general, image_drug, indication, brand_name, background
             }
             const dataBase = DbDrug.getInstaceDrug();
             const result = dataBase.insertDrugData(DrugData);
@@ -20,18 +20,18 @@ const DbDrug = require('../controlers/drugControler')
             result
             .then(data => response.json({ data: data }))
             .catch(err => console.log(err));
-        })
+        },
         
-        app.get('/obat/list', (request, response) => {
+        getAllDrug:  (request, response) => {
             const dataBase = DbDrug.getInstaceDrug();
             const result = dataBase.getAllDrug();
         
             result
             .then(data => response.json({obat: data}))
             .catch( err => console.log(err.message))
-        })
+        },
         
-        app.get('/obat/detail/:id', (request, response) => {
+        gedDrugByid: (request, response) => {
             const { id } = request.params;
             const dataBase = DbDrug.getInstaceDrug();
             const result = dataBase.getDrugById(id)
@@ -42,5 +42,5 @@ const DbDrug = require('../controlers/drugControler')
                 data: data}
                 ))
             .catch( err => console.log(err.message))
-        })
+        }
     } 

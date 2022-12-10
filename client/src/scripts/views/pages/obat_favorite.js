@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 const ObatFavorite = {
     async render() {
         return `
@@ -5,9 +6,9 @@ const ObatFavorite = {
             `;
       },
 
-      // async afterRender() {
+      async afterRender() {
 
-      // },
+      },
 };
 
 export default ObatFavorite;

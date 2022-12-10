@@ -241,6 +241,11 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .profil_card {
+    height: 600px;
+  }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -268,12 +273,16 @@
 @media screen and (min-width: 1025px) {
   .profil_head img {
     border-radius: 5px;
-    height: 300px;
+    height: 380px;
     width: 100%;
   }
 
+  .profil_card {
+    height: 735px;
+  }
+
   .profil_body {
-    font-size: 18px;
+    font-size: 17px;
     padding: 5px 10px;
   }
 }

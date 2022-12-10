@@ -1,5 +1,5 @@
 const GLOBAL_VAR = {
-    URL: 'http://54.185.109.161:9090/',
+    URL: 'http://34.222.35.64:9090/',
     DATABASE_NAME: 'sehatyuks',
     OBJECT_STORE_NAME: 'user_login',
     DATABASE_VERSION: '1',

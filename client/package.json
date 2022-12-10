@@ -1,12 +1,12 @@
 {
-  "name": "movie-catalogue",
+  "name": "iris-sehatyuks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "serve": "http-server dist --port 9000",
+    "serve": "http-server dist --port 4000",
     "build-serve": "npm run build && npm run serve"
   },
   "author": "",

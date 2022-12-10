@@ -39,12 +39,7 @@ class DataAPI {
     }
 
     static async getArticle() {
-        const response = await fetch('http://localhost:9090/article/list', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
+        const response = await fetch(`${API_ENDPOINT.GET_ARTIKEL}`);
         return response.json();
     }
 

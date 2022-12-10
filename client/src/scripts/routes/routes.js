@@ -1,4 +1,4 @@
-import artikelPage from '../views/pages/artikelPage';
+import artikelPage from '../views/pages/artikel_page';
 import HomePage from '../views/pages/home';
 import LingkunganPage from '../views/pages/lingkungan';
 import Covid19Page from '../views/pages/covid19';

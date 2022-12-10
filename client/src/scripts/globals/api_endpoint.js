@@ -16,6 +16,7 @@ const API_ENDPOINT = {
     GET_FOOD: `${GLOBAL_VAR.URL}food/list`,
     GET_FOOD_BY_ID: (id) => `${GLOBAL_VAR.URL}food/detail/${id}`,
     GET_LINGKUNGAN_BY_ID: (id) => `${GLOBAL_VAR.URL}lingkungan/detail/${id}`,
+    GET_ARTIKEL: `${GLOBAL_VAR.URL}article/list`,
 };
 
 export default API_ENDPOINT;
